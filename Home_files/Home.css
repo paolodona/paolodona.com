@@ -40,6 +40,42 @@
     text-indent: 0px;
     text-transform: none;
 }
+
+#twitter_update_list  {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+#twitter_update_list li {
+    list-style-type: none;
+    color: #666666;
+    font-family: 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+    border-left: 8px solid #EEEEEE;
+}
+
+#twitter_update_list li a {
+    color: #B0B0B0;
+}
+
+
 .Playlist {
     color: #666666;
     font-family: 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
@@ -95,7 +131,7 @@
     font-weight: bold;
     opacity: 1.00;
 }
-.paragraph_style {
+.paragraph_style , .sidebar-title{
     color: #333333;
     font-family: 'HelveticaNeue-Bold', 'Helvetica Neue', 'Arial', sans-serif;
     font-size: 28px;
@@ -203,3 +239,4 @@ div.paragraph {
 li.full-width {
     width: 100;
 }
+
