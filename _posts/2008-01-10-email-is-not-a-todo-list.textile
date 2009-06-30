@@ -1,0 +1,24 @@
+---
+layout: post
+title: To my email driven friends 
+author: Paolo Dona
+---
+h1. <a href="{{page.url}}">{{ page.title }}</a>
+
+p(meta). published on {{page.date | date: "%b %d, %Y"}} by {{page.author}}
+
+I wanted to report a great video I discovered trough "www.presentationzen.com":http://www.presentationzen.com/presentationzen/2007/08/inbox-zero.html. I hearthly share its content so... keep reading!
+
+I have a bad relationship with email. It's not that I don't like them but I think that checking the inbox too often is a compulsive action, not a necessity.
+I hate those email clients which notify me when a new mail arrives. It's distracting... it's totally unproductive... I mean, the power of the email is that you can receive messages while offline or busy and you can read them when you want to. 
+Whenever I find myself repeatedly checking my inbox I feel like a dog waiting for a cookie. And even when people are not compulsively checking their inboxes... they're probably scanning their past messages in order to organize their days.
+Scanning messages over and over again. Not a good practice if you want to get things done. 
+Checking emails every couple of hours is more than enough.
+
+Are email clients becoming our new to-do lists? Should we spend so much time on our email inbox? Should our lives be email driven?
+
+On this subject "Merlin Mann":http://www.merlinmann.com gave us a "great presentation":http://video.google.com/videoplay?docid=973149761529535925&hl=en inlined here:
+
+<embed src="http://video.google.com/googleplayer.swf?docId=973149761529535925&amp;hl=en" type="application/x-shockwave-flash" id="VideoPlayback" style="width: 425px; height: 346px;"> 
+
+Hope you enjoy it as much as I did.
