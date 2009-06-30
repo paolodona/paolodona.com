@@ -1,26 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="4niches.com" />
-   <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <title>{{ page.title }}</title>
+     <meta name="author" content="4niches.com" />
+     <link rel="alternate" type="application/atom+xml" title="Paolo Dona'" href="http://feeds.feedburner.com/Paolodona">
+     <link rel="stylesheet" href="/stylesheets/gs.css" type="text/css" media="screen, projection" />
+     <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen, projection" />
+     <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
+  </head>
+  <body class="con40">
+    {% include header.html %} 
+    
+    <div class="g23 suf1 fi"> {{ content }} </div>
+    <div class="g16 la"> 
+      {% include sidebar.html %}
+      {% include twitter.html %} 
+    </div>
 
-   <link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/stylesheets/gs.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/stylesheets/text.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
-</head>
-<body class="con40">
-  {% include header.html %} 
-  
-  <div class="content">
-    {{ content }}
-  </div>  
-
-  {% include footer.html %} 
-  
-</div>
-</body>
+    {% include footer.html %} 
+  </div>
+  {% include analytics.html %} 
+  </body>
 </html>

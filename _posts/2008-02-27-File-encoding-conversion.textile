@@ -1,0 +1,28 @@
+---
+layout: post
+title: File Encoding Conversion 
+author: Paolo Dona
+---
+
+h1. <a href="{{page.url}}">{{ page.title }}</a>
+
+p(meta). published on {{page.date | date: "%b %d, %Y"}} by {{page.author}}
+
+This morning I struggled a bit to find  a decent encoding converter for osx... from time to time I get stuck on encoding issues so I wanted to have something 'friendly'  to handle this kind of problems...
+
+I found "Cyclone":http://free.abracode.com/cyclone/ based on "Apple Text Encoding Converter":http://developer.apple.com/sdk/ (look for TEC) but it kept failing in some strange ways (It gave me weird messages about converters creation).  After googling for a while I gave up. It seems there are no good-free-GUI alternatives on the net... 
+
+Sometimes the solution is closer than you think and the good old "iconv":http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html rescued me in a snap:
+
+@[paolo@fingus]$ iconv -f UTF-16 -t UTF-8 utf16_file.txt > utf8_file.txt@
+
+you can list the available encodings with:
+
+@[paolo@fingus]$ iconv -l@
+
+The cool part is you can use it in conjunction with "TextMate's Filter Through Command":http://www.bestechvideos.com/2007/04/29/textmate-filter-through-command feature thus enabling  in-editor lightning-fast conversions.
+
+The only missing part was discovering the original file's encoding, in order to pass iconv the correct -f option. The not-so-reliable way I used was to open the file with Firefox and inspect the encoding using the *View -> Character Encoding* menu item. 
+
+That's it,  problem solved. 
+If you know better ways to do this... let me know!

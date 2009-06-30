@@ -1,0 +1,29 @@
+---
+layout: post
+title: Back to a proper Blog 
+author: Paolo Dona
+---
+
+h1. <a href="{{page.url}}">{{ page.title }}</a>
+
+p(meta). published on {{page.date | date: "%b %d, %Y"}} by {{page.author}}
+
+As my readers surely noticed, in the past 10 months I run a micro blog consisting of a subset of my Twitter updates.
+
+I found the experiment interesting, and it's amazing how much information you can put in 140 characters. At the same time I find it a bit limiting, for the following reasons:
+
+# I can't use twitter for 'real' twitter updates, as it pollutes the blog
+# I couldn't find a straightforward way to filter replies
+# I'd love to write some more, some times
+# The blog doesn't get indexed correctly, as the twitter integration is done via Javascript
+
+That's why I'm switching back to a normal blog. There are a bunch of things I'll post about in the forthcoming weeks:
+
+* My entrepreneurial experiments
+* My career development
+* The life of "the Italian guy", in London
+
+Hope you enjoy the change and keep the conversation open with your comments!
+You can still follow me on "Twitter":http://twitter.com/paolodona, and subscribe to my "feed":http://xxxx/Paolodona.
+
+--Paolo
