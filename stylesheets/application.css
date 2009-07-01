@@ -238,18 +238,6 @@ body {
 .post {
   margin-bottom: 32px;
 }
-.post a {
-    color: #999999;
-    text-decoration: underline;
-}
-.post a:visited {
-    color: #666666;
-    text-decoration: underline;
-}
-.post a:hover {
-    color: #ff0000;
-    text-decoration: underline;
-}
 
 .spacer {
   clear: both;
