@@ -3,10 +3,12 @@ layout: default
 title: "Paolo Dona: Web Developer and (not yet) Entrepreneur"
 ---
 {% for post in site.posts limit:5 %}
-  <div class="post">
+<div class="post">
+  <h1><a href="{{post.url}}">{{ post.title }}</a></h1>
+  <p class="meta">published on {{post.date | date: "%b %d, %Y"}} by {{post.author}}</p>
   {{ post.content }}
   <a href="{{ post.url }}#disqus_thread">View Comments</a>
-  </div>
+</div>
 {% endfor %}
 
 <h2>Latest Posts</h2>

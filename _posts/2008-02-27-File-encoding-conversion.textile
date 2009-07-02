@@ -3,11 +3,6 @@ layout: post
 title: File Encoding Conversion 
 author: Paolo Dona
 ---
-
-h1. <a href="{{page.url}}">{{ page.title }}</a>
-
-p(meta). published on {{page.date | date: "%b %d, %Y"}} by {{page.author}}
-
 This morning I struggled a bit to find  a decent encoding converter for osx... from time to time I get stuck on encoding issues so I wanted to have something 'friendly'  to handle this kind of problems...
 
 I found "Cyclone":http://free.abracode.com/cyclone/ based on "Apple Text Encoding Converter":http://developer.apple.com/sdk/ (look for TEC) but it kept failing in some strange ways (It gave me weird messages about converters creation).  After googling for a while I gave up. It seems there are no good-free-GUI alternatives on the net... 

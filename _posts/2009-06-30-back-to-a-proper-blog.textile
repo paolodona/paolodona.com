@@ -3,11 +3,6 @@ layout: post
 title: Back to a proper Blog 
 author: Paolo Dona
 ---
-
-h1. <a href="{{page.url}}">{{ page.title }}</a>
-
-p(meta). published on {{page.date | date: "%b %d, %Y"}} by {{page.author}}
-
 As my readers surely noticed, in the past 10 months I run a micro blog consisting of a subset of my Twitter updates.
 
 I found the experiment interesting, and it's amazing how much information you can put in 140 characters. At the same time I find it a bit limiting, for the following reasons:
