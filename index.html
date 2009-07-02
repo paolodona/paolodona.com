@@ -13,10 +13,11 @@ title: "Paolo Dona: Web Developer and (not yet) Entrepreneur"
 
 <h2>Latest Posts</h2>
 {% for post in site.posts limit:15 %}
-  <span class='date g4 fi right'>{{ post.date | date: "%b %d %Y" }}</span> 
-  <span class='g15 la'><a href="{{ post.url }}">{{ post.title}} &raquo;</a></span>
+  <span class='g15 fl'><a href="{{ post.url }}">{{ post.title}} &raquo;</a></span>
   <span class="clear"></span>
 {% endfor %}
+<span class="spacer"></span>
+<small class="shy">or <a href="/archive.html">visit the archive</a></span>
 
 <!-- disqus -->
 <script type="text/javascript">

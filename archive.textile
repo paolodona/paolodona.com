@@ -1,0 +1,13 @@
+---
+layout: default 
+title: "Paolo Dona: Web Developer and (not yet) Entrepreneur"
+---
+h2. Blog Archive
+
+<div class="archive">
+{% for post in site.posts limit:15 %}
+  <span class='date g4 suf1 fi right'>{{ post.date | date: "%Y %b %d" }}</span> 
+  <span class='g15 la'><h3><a href="{{ post.url }}">{{ post.title}} &raquo;</a></h3></span>
+  <span class="clear"></span>
+{% endfor %}
+</div>
