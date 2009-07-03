@@ -14,7 +14,7 @@ after :deploy, :regenerate_site
 
 desc "regenerate site"
 task :regenerate_site do
-  run "cd #{current_path}; jekyll"
+  run "cd #{current_path}; jekyll --lsi"
 end 
 
 namespace :deploy do

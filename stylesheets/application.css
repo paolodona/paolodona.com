@@ -1,5 +1,5 @@
 h1 {
-  color:#A80026;
+  color:#246B8A;
   font-family:helvetica,arial,sans-serif;
   font-size:36px;
   letter-spacing:-2px;
@@ -10,19 +10,19 @@ h1 {
 }
 
 h1 a, h1 a:hover, h1 a:visited {
-  color:#AC0531;
+  color:#246B8A;
 }
 
 a {
-  color:#A80026;
+  color:#246B8A;
   text-decoration: underline;
 }
 a:visited {
-  color:#A80026;
+  color:#246B8A;
   text-decoration: underline;
 }
 a:hover {
-  color:#A80026;
+  color:#246B8A;
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ a:hover {
 }
 
 .header h1 {
-  color:#A80026;
+  color:#246B8A;
   font-family:helvetica,arial,sans-serif;
   font-size:48px;
   letter-spacing:-2px;

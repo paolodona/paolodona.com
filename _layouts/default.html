@@ -17,6 +17,15 @@
     
     <div class="g23 suf1 fi"> {{ content }} </div>
     <div class="g16 la"> 
+      <h3>Other Articles:</h3>
+      {% for post in site.posts limit:15 offset:1%}
+        <span class='g15 fl'><a href="{{ post.url }}">{{ post.title}} &raquo;</a></span>
+        <span class="clear"></span>
+      {% endfor %}
+      <span class="spacer"></span>
+      <small class="shy">or <b><a href="/archive.html">visit the archive</a></b></small>
+      <br/><br/> 
+      
       {% include sidebar.html %}
       {% include twitter.html %} 
     </div>
