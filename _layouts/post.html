@@ -3,8 +3,8 @@ layout: default
 ---
 <div id="post">
   <h1><a href="{{page.url}}">{{ page.title }}</a></h1>
-  <p class="meta">published on {{page.date | date: "%b %d, %Y"}} by {{page.author}}</p>
   {{ content }}
+  <p class="meta">published on {{page.date | date: "%b %d, %Y"}} by {{page.author}}</p>
   {% include post_comments.html %} 
 </div>
 

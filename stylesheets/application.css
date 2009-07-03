@@ -267,3 +267,10 @@ div.paragraph {
 .footer {
   text-align: center;
 }
+
+.dsq-item-sort, .dsq-item-cp {
+  display: none;
+}
+
+.dsq-h3-commentcount, #dsq-options {display: inline;}
+#dsq-options {padding: 0 0 3px 20px}
