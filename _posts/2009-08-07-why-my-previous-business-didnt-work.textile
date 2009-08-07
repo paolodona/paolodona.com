@@ -1,0 +1,64 @@
+---
+layout: post
+title: Why My Previous Business Didn't Work
+author: Paolo Dona
+---
+
+Before relocating to the UK I used to run my own business. I co-founded "SeeSaw":http://www.seesaw.it, an Italian consultancy firm. About one year ago I sold my shares to a partner, and the company hasn't done much since.
+Whilst the business was reasonably profitable, the fact that at some point we abandoned our dreams and basically gave up trying, makes me consider the adventure as a partial failure. 
+
+I'll try to analyze what didn't work and why.
+
+h4. What was the business about
+
+We (the three founders) were Java/Ruby consultants struck with an entreprenurial seizure. As most good enough programmers do, we just thought "we can do it better" and started implementing projects for other companies. Not that kind of pay-me-by-the-hour consultants, but the risky we-will-deliver-what-you-need kind of guys. We wanted also to build our owns products, but the idea never really took off.
+
+h4. Lack of mission
+
+The company mission wasn't very clear, we wanted to build a product (a financial-analysis tool that we discussed about for months), but not having any money in the pocket we started consulting. And once the money started coming in, we kept ourselves busy with a customer's project, and another, and another. Along the way we also started doing training courses, open source plugins, speeches at conferences. All great stuff, but we didn't focus on developing a core business idea. 
+When you are good at doing whatever you want to, you risk switching between too many topics without maximizing your potential.
+I'll give you a bunch of examples of stuff we've done:
+
+# First Ruby workshops in Italy 
+# Web apps using Java/Spring/Oracle on BEA Weblogic
+# Rails apps on MS SQL Server
+# Rails catalogues as bootable CDs with online synch
+# Static websites and CMS
+# Desktop apps based on the Eclipse and Netbeans platform
+
+Good experience? Sure. Best way to spend our energies? I really doubt it.
+
+h4. Lack of roles
+
+Partner A: You're too slow!
+Partner B: You don't think about maintainability!
+Partner C: But the GUI is the most important thing!
+Partner A: But that's not RESTful!
+Partner B: But that Kernel module needs to be recompiled!
+
+There's no way three programmers with the same seniority can agree on everything. This can easily lead to endless discussions on how to implement this and that. Everyone feels entitled to say something about a partner's work.
+Someone needs to be in charge of the decisions, and that's it. Someone at some point need to say "This is how we do it here", It's business, not a pub chat after all.
+The roles inside the company needs to be defined and cristal clear from the beginning. The input and expected output for each role needs to be defined in advance as well.
+
+h4. Micro management
+
+When you work in your own business, you tend to become a maniac. Pixel-perfect alignment here, perfect ruby pattern there and so on. You finally can create the perfect world you couldn't find in the companies you worked for. The problem arises when you're overwhelmed and need to rely on employees and contractors. They will never care as much as you do and you'll be bothered by the 'not perfect way' they're doing their assignments. You panic, and start designing websites even if you're not a web designer, doing the books even if you're not an accountant, writing copies for web sites even if you're not a content editor to just make sure everything's done your way. You'll end up doing, checking, and generally speaking, working so much that you'll hardly find energy to 'run' your business. You'll end up being always busy and run by the events. That's exactly how I felt when I gave up.
+
+h4. Fear 
+
+Only recently I could realize how many business decisions we've made have been driven by fear. There's that customer that you don't really trust, but you think "well, at the end of the day we need to work"... and embrace a project you don't believe in. That customer, after 1 year and a half, hasn't yet paid you and you're still banging your head on the wall. 
+Trust your feelings, and don't do business just because you need to survive. It's better to be employed by someone else and have the time to rethink your strategy.
+
+We kept changing our short term goals to match whatever was profitable at the moment, to not be confronted with the implications and sacrifices of a long term plan.
+
+The business model needs to be robust and if you find yourself changing it too often, or making too many exceptions to your plan, you better take a pause and rethink it from scratch. 
+
+At the same time fear kept us inside our confort zone. We only did what we could do or completely understand ourselves. For example we never had a proper marketing plan because we're not marketing guys. What we should have done instead is identify the roles we needed to make the business succeed and hire appropriate people. 
+
+h3. Conclusion
+
+Many people think about entrepreneurship just as having a better or cooler job. I'm finally starting to see the difference between 'working in a business' and 'running a business'. Look at your own boss: is it _working_ in the business (making the products/services himself)? Chances are he's not. Is he _running_ his business? Probably yes, and he's definitely making more money than you are.
+
+There are so many activities that my business didn't properly take into account, from planning to marketing to resource management and task delegation. This first entreprenurial adventure has been a great experience and a good chance to see different aspects of a business and I'm confident this will help me a lot on my next attempt.
+
+If you run your own business and it hasn't succeded the way you wanted it to, please share your experience in the comments.
