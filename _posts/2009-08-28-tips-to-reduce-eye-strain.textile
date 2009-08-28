@@ -11,8 +11,6 @@ I just want to share a couple of tips which are helping me to reduce eye strain:
 
 h2. 1. Use "Nocturne":http://docs.blacktree.com/nocturne/nocturne
 
-!http://picasaweb.google.com/lh/photo/VnPCIl4mpxsaYf1y2WkEgQ?authkey=Gv1sRgCLPRxt_Kt9XJUQ&feat=directlink!
-
 Looking at the computer screen is like looking at a light bulb. The less white light hit your eyes, the better. I used to use editors with a black background but there are a couple of applications that do not support color customization (Word, Excel and the like). 
 
 Nocturne is a little application that invert the colors on your screen, so that white becomes black and viceversa. I can assure this is a lot easier on your eyes and you'll feel the difference if you just try it for an hour.
