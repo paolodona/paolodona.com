@@ -17,7 +17,7 @@ Nocturne is a little application that invert the colors on your screen, so that 
 
 h2. 2. Use "AntiRSI":http://tech.inhelsinki.nl/antirsi/
 
-I'm used to look at close objects and my optometrist suggested to regurarly look at things far away, and of course I forget to.
+I'm used to look at close objects and my optometrist suggested to regularly look at things far away, and of course I forget to.
 This software (Anti Repetitive Strain Injury) remind you to take short breaks every now and then, to make sure you don't stare at the computer screen for too long without giving your eyes the chance to rest.
 
 AntiRSI is smart enough to understand if you've already taken a break, monitoring your mouse and keyboard activity.

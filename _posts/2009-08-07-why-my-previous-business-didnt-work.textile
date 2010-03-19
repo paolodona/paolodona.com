@@ -11,7 +11,7 @@ I'll try to analyze what didn't work and why.
 
 h4. What was the business about
 
-We (the three founders) were Java/Ruby consultants struck with an entreprenurial seizure. As most good enough programmers do, we just thought "we can do it better" and started implementing projects for other companies. Not that kind of pay-me-by-the-hour consultants, but the risky we-will-deliver-what-you-need kind of guys. We wanted also to build our owns products, but the idea never really took off.
+We (the three founders) were Java/Ruby consultants struck with an entrepreneurial seizure. As most good enough programmers do, we just thought "we can do it better" and started implementing projects for other companies. Not that kind of pay-me-by-the-hour consultants, but the risky we-will-deliver-what-you-need kind of guys. We wanted also to build our owns products, but the idea never really took off.
 
 h4. Lack of mission
 
@@ -61,4 +61,4 @@ Many people think about entrepreneurship just as having a better or cooler job. 
 
 There are so many activities that my business didn't properly take into account, from planning to marketing to resource management and task delegation. This first entreprenurial adventure has been a great experience and a good chance to see different aspects of a business and I'm confident this will help me a lot on my next attempt.
 
-If you run your own business and it hasn't succeded the way you wanted it to, please share your experience in the comments.
+If you run your own business and it hasn't succeeded the way you wanted it to, please share your experience in the comments.
