@@ -47,4 +47,4 @@ Wherever my career might take me, I'm sure this experiment will be a valuable le
 And just in case you're wondering: No, it's not profitable yet. 
 And again no, "I'm not going to quit my job":http://37signals.com/svn/posts/1917-i-quit-my-job-applause.
 
-PS: My colleagues might find the UI quite familiar. Don't complain, it's been borrowed from previus work done at "SeeSaw":http://www.seesaw.it.
+PS: My colleagues might find the UI quite familiar. Don't complain, it's been borrowed from previous work done at "SeeSaw":http://www.seesaw.it.
