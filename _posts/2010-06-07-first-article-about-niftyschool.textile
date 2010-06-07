@@ -7,6 +7,6 @@ author: Paolo Dona
 Hey guys, just a quick one. 
 "WG Comunicazione":http://www.wgcomunicazione.it, a digital agency based in northern Italy, has just published an article about "NiftySchool":http://www.niftyschool.com, the online tool I created to manage language schools.
 
-!http://paolodona.com/images/posts/wgcomunicazione.it!:http://www.wgcomunicazione.it/niftyschool-com-la-gestione-delle-scuole-di-lingua-si-sposta-sul-web
+!http://paolodona.com/images/posts/wgcomunicazione.jpg!:http://www.wgcomunicazione.it/niftyschool-com-la-gestione-delle-scuole-di-lingua-si-sposta-sul-web
 
 You can read the full article "here":http://www.wgcomunicazione.it/niftyschool-com-la-gestione-delle-scuole-di-lingua-si-sposta-sul-web. Thanks to Roberto Bogo and the whole WG Comunicazione team. 
