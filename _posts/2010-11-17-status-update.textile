@@ -3,7 +3,7 @@ layout: post
 title: Status Update November 2010
 author: Paolo Dona
 ---
-Hi guys, I haven't posted anything in a long while, and thought to drop you a quick update. Highlight: I'm alive and doing well, you can skip the rest :)
+Hey guys, I haven't posted anything in a long while, and thought to drop you a quick update. Highlight: I'm alive and doing well, you can skip the rest :)
 
 So, what have I been up to during the past months? I'm extremely busy on an interesting project: a marketing communication platform that incorporates multiple channels: email, sms, social media + CRM aspects and a really kick ass reporting engine. 
 

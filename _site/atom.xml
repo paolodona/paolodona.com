@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Paolo Dona</title>
+ <link href="http://feeds.feedburner.com/Paolodona" rel="self"/>
+ <link href="http://paolodona.com/"/>
+ <updated>2011-01-23T13:19:13+00:00</updated>
+ <id>http://paolodona.com/</id>
+ <author>
+   <name>Paolo Dona</name>
+   <email>paolo.dona@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Status Update November 2010</title>
+   <link href="http://paolodona.com/2010/11/17/status-update.html"/>
+   <updated>2010-11-17T00:00:00+00:00</updated>
+   <id>http://paolodona.com/2010/11/17/status-update</id>
+   <content type="html">&lt;p&gt;Hey guys, I haven&amp;#8217;t posted anything in a long while, and thought to drop you a quick update. Highlight: I&amp;#8217;m alive and doing well, you can skip the rest :)&lt;/p&gt;
+&lt;p&gt;So, what have I been up to during the past months? I&amp;#8217;m extremely busy on an interesting project: a marketing communication platform that incorporates multiple channels: email, sms, social media + &lt;span class=&quot;caps&quot;&gt;CRM&lt;/span&gt; aspects and a really kick ass reporting engine.&lt;/p&gt;
+&lt;p&gt;We&amp;#8217;re dealing with massive volumes here and there are challenging technical problems that need to be solved. Luckily enough I&amp;#8217;m supported by great engineers and I&amp;#8217;m sure this will be a huge success.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m spending half of my time in Manchester with this new team and for the first time in my life I have to deal with &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; &amp;amp; new technologies like MongoDB etc. To be honest I&amp;#8217;m not doing the programming myself, but it&amp;#8217;s interesting to see the difference between these technologies and the Ruby/MySQL world I&amp;#8217;m so used to.&lt;/p&gt;
+&lt;p&gt;At the same time, the quest to conquer the world of language schools continues with my &lt;a href=&quot;http://www.niftyschool.com&quot;&gt;NiftySchool.com&lt;/a&gt;. This is really a humbling experience.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m working really hard on this baby to make it the best software a language school can buy. You need dedication, patience and a pretty much unlimited amount of willpower to keep helping your customers and understand what is really useful, day after day after day. After day. But I love it and I&amp;#8217;m not going to stop.&lt;/p&gt;
+&lt;p&gt;What I have failed to understand in the past, is the level of sacrifice and dedication needed to make your product succeed. Many can write a piece of software, few can suffer long enough to see it flourish. Few are able to say no to all of the distractions preventing them to achieve their goals.&lt;/p&gt;
+&lt;p&gt;Early mornings, late evenings, weekends, any available moment is spent tweaking, improving and giving our schools our best.&lt;/p&gt;
+&lt;p&gt;We already introduced a number of interesting features such as ability to take online payments, automated document generation, taking pictures of the students via webcam, contact management, alerts and so on. On top of that full support for the American market and visa handling.&lt;/p&gt;
+&lt;p&gt;The roadmap is filled with interesting and useful stuff and we can&amp;#8217;t wait to impress our customers and get new schools onboard.&lt;/p&gt;
+&lt;p&gt;I dreamed about having a product for a long while, and now, even if slowly, the dream is becoming true.&lt;/p&gt;
+&lt;p&gt;This is pretty much it. I have very little time for anything else now&amp;#8230; hope you&amp;#8217;re doing well too. If you want feel free to get in touch.&lt;br /&gt;
+Paolo&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>WG Comunicazione Publishes An Article About NiftySchool</title>
+   <link href="http://paolodona.com/2010/06/07/first-article-about-niftyschool.html"/>
+   <updated>2010-06-07T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2010/06/07/first-article-about-niftyschool</id>
+   <content type="html">&lt;p&gt;Hey guys, just a quick one. &lt;br /&gt;
+&lt;a href=&quot;http://www.wgcomunicazione.it&quot;&gt;WG Comunicazione&lt;/a&gt;, a digital agency based in northern Italy, has just published an article about &lt;a href=&quot;http://www.niftyschool.com&quot;&gt;NiftySchool&lt;/a&gt;, the online tool I created to manage language schools.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.wgcomunicazione.it/niftyschool-com-la-gestione-delle-scuole-di-lingua-si-sposta-sul-web&quot;&gt;&lt;img src=&quot;http://paolodona.com/images/posts/wgcomunicazione.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can read the full article &lt;a href=&quot;http://www.wgcomunicazione.it/niftyschool-com-la-gestione-delle-scuole-di-lingua-si-sposta-sul-web&quot;&gt;here&lt;/a&gt;. Thanks to Roberto Bogo and the whole WG Comunicazione team.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>My First Product: An Online Service To Manage Language Schools</title>
+   <link href="http://paolodona.com/2010/04/01/my-first-product.html"/>
+   <updated>2010-04-01T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2010/04/01/my-first-product</id>
+   <content type="html">&lt;p&gt;As you probably know I&amp;#8217;ve worked in the software development industry for about 10 years now. I&amp;#8217;ve covered different roles such as developer, teacher, consultant, and product manager.&lt;/p&gt;
+&lt;p&gt;In the past year I realised I&amp;#8217;m not only interested in the technical side of software development; Over time I&amp;#8217;ve become more and more interested in all the other activities related to the creation of a product.&lt;/p&gt;
+&lt;p&gt;As any other software developer, I have started and abandoned over two dozen projects, giving up every time I came across something more exciting, and this started getting on my nerves.&lt;/p&gt;
+&lt;p&gt;How come I&amp;#8217;ve succesfully worked on a multitude of projects and products for my employers and customers but I&amp;#8217;ve never completely owned a product? I strongly feel I&amp;#8217;ve missed the whole point of my efforts.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s important to me to prove I can create something meaningful and useful, something good, that people are willing to pay for.&lt;/p&gt;
+&lt;p&gt;I want to understand why certain things work and others don&amp;#8217;t. I want to understand where the real value of a product is, no matter how complex or interesting the underlying technology.&lt;/p&gt;
+&lt;p&gt;The opportunity to create a product from scratch struck me about a year ago, when a language school here in London asked me to build a new system to manage their students.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve taken this chance to get exposed to the whole lifecycle of a product, and in the meanwhile waste a bit of my free time.&lt;/p&gt;
+&lt;p&gt;So far the journey has been quite interesting as I&amp;#8217;ve been involved in:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;doing market research&lt;/li&gt;
+	&lt;li&gt;creating a business case, outlining costs and profitability&lt;/li&gt;
+	&lt;li&gt;setting up &lt;span class=&quot;caps&quot;&gt;PPC&lt;/span&gt; marketing campaigns&lt;/li&gt;
+	&lt;li&gt;learning to optimize landing pages for conversion&lt;/li&gt;
+	&lt;li&gt;learning how to do email marketing&lt;/li&gt;
+	&lt;li&gt;understanding the business domain&lt;/li&gt;
+	&lt;li&gt;supporting customers&lt;/li&gt;
+	&lt;li&gt;managing people across different timezones &lt;sup&gt;1&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;sup&gt;(1)&lt;/sup&gt; I&amp;#8217;ve not been alone through all this, as I needed the help of a few programmers, designers and copywriters to actually bring something to life while preserving my habit of sleeping eight hours a day :-)&lt;/p&gt;
+&lt;p&gt;The project is a software-as-a-service that helps schools manage their classes, attendances, payments, documents and so on.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s still in its infancy but it&amp;#8217;s up and running and currently used by a few schools.&lt;/p&gt;
+&lt;p&gt;You can take a look at it at &lt;a href=&quot;http://www.niftyschool.com&quot;&gt;http://www.niftyschool.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;d love to know what you think, any comments or suggestions are more than welcome!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.niftyschool.com&quot;&gt;&lt;img src=&quot;http://www.paolodona.com/images/posts/niftyschool.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wherever my career may take me, I&amp;#8217;m sure this experiment will be a valuable lesson in better understanding the web product business.&lt;/p&gt;
+&lt;p&gt;And just in case you&amp;#8217;re wondering: No, it&amp;#8217;s not profitable yet. &lt;br /&gt;
+And again no, &lt;a href=&quot;http://37signals.com/svn/posts/1917-i-quit-my-job-applause&quot;&gt;I&amp;#8217;m not going to quit my job&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PS: My colleagues might find the UI quite familiar. Don&amp;#8217;t complain, it&amp;#8217;s been borrowed from previous work done at &lt;a href=&quot;http://www.seesaw.it&quot;&gt;SeeSaw&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>How to keep yourself motivated</title>
+   <link href="http://paolodona.com/2009/09/13/how-to-keep-yourself-motivated.html"/>
+   <updated>2009-09-13T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2009/09/13/how-to-keep-yourself-motivated</id>
+   <content type="html">&lt;p&gt;There are days in which you feel invicible. It&amp;#8217;s great when you&amp;#8217;re excited about a goal, a new topic, or when you have an inspiring chat with a friend and the impossible seems achievable. During these days we&amp;#8217;re confident in our ideas, we can influence people and get them excited, and we can carry a special emotional power that lights up our time and makes us feel alive and positive about our future.&lt;/p&gt;
+&lt;p&gt;There are other days in which laziness and routine just take over. We don&amp;#8217;t feel like working and we&amp;#8217;re uninterested in putting effort in even the simplest tasks. There are times in which we lack passion and drive.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s important to understand this is normal. For a long time I felt guilty for feeling tired or lazy or not so interested in what I considered life goals of mine. And most of the time I just was too tired or overwhelmed. &lt;br /&gt;
+Our mood depends on how tired we are, on our diet, on our expectations, and another million things. So please do expect to have up and down periods.&lt;/p&gt;
+&lt;p&gt;Whilst I do not want to push against my natural mood swings, I&amp;#8217;ve discovered a bunch of tips that help me overcome these moments and get back to a great excited, positive and active mood:&lt;/p&gt;
+&lt;h2&gt;Hang out with inspiring people&lt;/h2&gt;
+&lt;p&gt;Favour funny, exciting, interesting people over negative ones! Do ask them to hang out with you, invite them for dinner, host them if you can. Sharing positive attitude is vital to keep you motivated. Avoid people who tend to complain too much, or have no desire to improve and live life at its fullest.&lt;/p&gt;
+&lt;h2&gt;Read inspiring books&lt;/h2&gt;
+&lt;p&gt;There are books who can inspire and improve our willing to chase our dreams. Keep them and reread them whenever necessary!&lt;br /&gt;
+I tend to read inspiring books for 10/15 minutes after breakfast. That really set the right pace for the day and make me focus on the important things.&lt;/p&gt;
+&lt;h2&gt;Rest, Rest, Rest&lt;/h2&gt;
+&lt;p&gt;There are people who achieve success at 20, others at 50. If you&amp;#8217;re tired and are not&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Suggestions for your monthly resolutions</title>
+   <link href="http://paolodona.com/2009/09/03/suggestions-for-your-monthly-resolutions.html"/>
+   <updated>2009-09-03T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2009/09/03/suggestions-for-your-monthly-resolutions</id>
+   <content type="html">&lt;p&gt;As you know, I&amp;#8217;m into &lt;a href=&quot;http://paolodona.com/2009/07/07/replace-year-resolution-with-12-monthly-resolutions.html&quot;&gt;monthly resolutions&lt;/a&gt;.&lt;br /&gt;
+I want to find out new goals as this way to improve my lifestyle has proven really successful and rewarding.&lt;/p&gt;
+&lt;p&gt;Here you&amp;#8217;ll find a bunch of ideas from which I&amp;#8217;ll choose my September&amp;#8217;s resolution:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Track personal finances and expenses&lt;/li&gt;
+	&lt;li&gt;Do not drink Soda&lt;/li&gt;
+	&lt;li&gt;Always cook my own lunch and bring it to work (as opposed to buy it)&lt;/li&gt;
+	&lt;li&gt;Relax properly every day (eg: 10 minutes of pure rest or breathing exercises)&lt;/li&gt;
+	&lt;li&gt;10 minutes of walking/running a day (maybe using my &lt;a href=&quot;http://picasaweb.google.com/paolo.dona/5fingers&quot;&gt;fivefingers&lt;/a&gt;)&lt;/li&gt;
+	&lt;li&gt;Check email twice a day at regular times&lt;/li&gt;
+	&lt;li&gt;Work on my own projects every Saturday morning&lt;/li&gt;
+	&lt;li&gt;Declutter the house 10 minutes a day&lt;/li&gt;
+	&lt;li&gt;Have a basic weekly dinner program (so that I don&amp;#8217;t randomly eat junk food)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They&amp;#8217;re just Ideas and I&amp;#8217;ve got only four months left this year so I&amp;#8217;m pretty sure I won&amp;#8217;t be able to do them all, but they can be inspirational for you as well. Once you&amp;#8217;ve compiled your own list you need to go through it and ask yourself the following questions:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;What&amp;#8217;s the habit which can have the most impact on my life?&lt;/li&gt;
+	&lt;li&gt;Which habit would I be the most proud of?&lt;/li&gt;
+	&lt;li&gt;Which habit would solve a behaviour which I consider an issue now?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;My answers to these questions are:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Most impact: &lt;strong&gt;Work on my projects every Saturday morning&lt;/strong&gt; as I dream to run my own online products in the future.&lt;/li&gt;
+	&lt;li&gt;Most proud of: &lt;strong&gt;10 minutes of walking/running&lt;/strong&gt; as could help me to get started with regular exercise.&lt;/li&gt;
+	&lt;li&gt;Solve an issue: &lt;strong&gt;Check email only twice a day&lt;/strong&gt; as I feel I&amp;#8217;m too distracted and need to focus more on getting my stuff done instead of being always &amp;#8216;email driven&amp;#8217;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I decided to go with the &amp;#8220;Email twice a day&amp;#8221; resolution, as I&amp;#8217;ve been fascinated by:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;&lt;a href=&quot;http://web.archive.org/web/20071024171340/http://blog.pmarca.com/2007/06/the_pmarca_guid.html&quot;&gt;Marc Andreessen&amp;#8217;s guide to personal productivity&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.fourhourworkweek.com/blog/2007/03/22/how-to-check-e-mail-twice-a-day-or-once-every-10-days/&quot;&gt;Tim Ferris: How to Check E-mail Twice a Day or Once Every 10 Days&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What&amp;#8217;s &lt;em&gt;your&lt;/em&gt; September&amp;#8217;s resolution?&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Two Tips To Reduce Eye Strain</title>
+   <link href="http://paolodona.com/2009/08/28/tips-to-reduce-eye-strain.html"/>
+   <updated>2009-08-28T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2009/08/28/tips-to-reduce-eye-strain</id>
+   <content type="html">&lt;p&gt;In the past couple of months my eyesight has worsened quickly. &lt;br /&gt;
+It has worsened to the point that I now need to wear glasses on a daily basis. I know this doesn&amp;#8217;t sound too serius as there are millions of people wearing glasses or contact lenses but I consider it quite bad after 30 year of perfect eyesight. The worst thing about it is that I now get tired easily and I suffer from occasional headaches.&lt;/p&gt;
+&lt;p&gt;I just want to share a couple of tips which are helping me to reduce eye strain:&lt;/p&gt;
+&lt;h2&gt;1. Use &lt;a href=&quot;http://docs.blacktree.com/nocturne/nocturne&quot;&gt;Nocturne&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Looking at the computer screen is like looking at a light bulb. The less white light hit your eyes, the better. I used to use editors with a black background but there are a couple of applications that do not support color customization (Word, Excel and the like).&lt;/p&gt;
+&lt;p&gt;Nocturne is a little application that invert the colors on your screen, so that white becomes black and viceversa. I can assure this is a lot easier on your eyes and you&amp;#8217;ll feel the difference if you just try it for an hour.&lt;/p&gt;
+&lt;h2&gt;2. Use &lt;a href=&quot;http://tech.inhelsinki.nl/antirsi/&quot;&gt;AntiRSI&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I&amp;#8217;m used to look at close objects and my optometrist suggested to regularly look at things far away, and of course I forget to.&lt;br /&gt;
+This software (Anti Repetitive Strain Injury) remind you to take short breaks every now and then, to make sure you don&amp;#8217;t stare at the computer screen for too long without giving your eyes the chance to rest.&lt;/p&gt;
+&lt;p&gt;AntiRSI is smart enough to understand if you&amp;#8217;ve already taken a break, monitoring your mouse and keyboard activity.&lt;/p&gt;
+&lt;p&gt;These tools are only for Mac, please feel free to reply with Linux/Windows equivalents.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Why My Previous Business Didn't Work</title>
+   <link href="http://paolodona.com/2009/08/07/why-my-previous-business-didnt-work.html"/>
+   <updated>2009-08-07T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2009/08/07/why-my-previous-business-didnt-work</id>
+   <content type="html">&lt;p&gt;Before relocating to the UK I used to run my own business. I co-founded &lt;a href=&quot;http://www.seesaw.it&quot;&gt;SeeSaw&lt;/a&gt;, an Italian consultancy firm. About one year ago I sold my shares to a partner, and the company hasn&amp;#8217;t done much since.&lt;br /&gt;
+Whilst the business was reasonably profitable, the fact that at some point we abandoned our dreams and basically gave up trying, makes me consider the adventure as a partial failure.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll try to analyze what didn&amp;#8217;t work and why.&lt;/p&gt;
+&lt;h4&gt;What was the business about&lt;/h4&gt;
+&lt;p&gt;We (the three founders) were Java/Ruby consultants struck with an entrepreneurial seizure. As most good enough programmers do, we just thought &amp;#8220;we can do it better&amp;#8221; and started implementing projects for other companies. Not that kind of pay-me-by-the-hour consultants, but the risky we-will-deliver-what-you-need kind of guys. We wanted also to build our owns products, but the idea never really took off.&lt;/p&gt;
+&lt;h4&gt;Lack of mission&lt;/h4&gt;
+&lt;p&gt;The company mission wasn&amp;#8217;t very clear, we wanted to build a product (a financial-analysis tool that we discussed about for months), but not having any money in the pocket we started consulting. And once the money started coming in, we kept ourselves busy with a customer&amp;#8217;s project, and another, and another. Along the way we also started doing training courses, open source plugins, speeches at conferences. All great stuff, but we didn&amp;#8217;t focus on developing a core business idea. &lt;br /&gt;
+When you are good at doing whatever you want to, you risk switching between too many topics without maximizing your potential.&lt;br /&gt;
+I&amp;#8217;ll give you a bunch of examples of stuff we&amp;#8217;ve done:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;First Ruby workshops in Italy&lt;/li&gt;
+	&lt;li&gt;Web apps using Java/Spring/Oracle on &lt;span class=&quot;caps&quot;&gt;BEA&lt;/span&gt; Weblogic&lt;/li&gt;
+	&lt;li&gt;Rails apps on MS &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; Server&lt;/li&gt;
+	&lt;li&gt;Rails catalogues as bootable CDs with online synch&lt;/li&gt;
+	&lt;li&gt;Static websites and &lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;Desktop apps based on the Eclipse and Netbeans platform&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Good experience? Sure. Best way to spend our energies? I really doubt it.&lt;/p&gt;
+&lt;h4&gt;Lack of roles&lt;/h4&gt;
+&lt;p&gt;Partner A: You&amp;#8217;re too slow!&lt;br /&gt;
+Partner B: You don&amp;#8217;t think about maintainability!&lt;br /&gt;
+Partner C: But the &lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt; is the most important thing!&lt;br /&gt;
+Partner A: But that&amp;#8217;s not RESTful!&lt;br /&gt;
+Partner B: But that Kernel module needs to be recompiled!&lt;/p&gt;
+&lt;p&gt;There&amp;#8217;s no way three programmers with the same seniority can agree on everything. This can easily lead to endless discussions on how to implement this and that. Everyone feels entitled to say something about a partner&amp;#8217;s work.&lt;br /&gt;
+Someone needs to be in charge of the decisions, and that&amp;#8217;s it. Someone at some point need to say &amp;#8220;This is how we do it here&amp;#8221;, It&amp;#8217;s business, not a pub chat after all.&lt;br /&gt;
+The roles inside the company needs to be defined and cristal clear from the beginning. The input and expected output for each role needs to be defined in advance as well.&lt;/p&gt;
+&lt;h4&gt;Micro management&lt;/h4&gt;
+&lt;p&gt;When you work in your own business, you tend to become a maniac. Pixel-perfect alignment here, perfect ruby pattern there and so on. You finally can create the perfect world you couldn&amp;#8217;t find in the companies you worked for. The problem arises when you&amp;#8217;re overwhelmed and need to rely on employees and contractors. They will never care as much as you do and you&amp;#8217;ll be bothered by the &amp;#8216;not perfect way&amp;#8217; they&amp;#8217;re doing their assignments. You panic, and start designing websites even if you&amp;#8217;re not a web designer, doing the books even if you&amp;#8217;re not an accountant, writing copies for web sites even if you&amp;#8217;re not a content editor to just make sure everything&amp;#8217;s done your way. You&amp;#8217;ll end up doing, checking, and generally speaking, working so much that you&amp;#8217;ll hardly find energy to &amp;#8216;run&amp;#8217; your business. You&amp;#8217;ll end up being always busy and run by the events. That&amp;#8217;s exactly how I felt when I gave up.&lt;/p&gt;
+&lt;h4&gt;Fear&lt;/h4&gt;
+&lt;p&gt;Only recently I could realize how many business decisions we&amp;#8217;ve made have been driven by fear. There&amp;#8217;s that customer that you don&amp;#8217;t really trust, but you think &amp;#8220;well, at the end of the day we need to work&amp;#8221;&amp;#8230; and embrace a project you don&amp;#8217;t believe in. That customer, after 1 year and a half, hasn&amp;#8217;t yet paid you and you&amp;#8217;re still banging your head on the wall. &lt;br /&gt;
+Trust your feelings, and don&amp;#8217;t do business just because you need to survive. It&amp;#8217;s better to be employed by someone else and have the time to rethink your strategy.&lt;/p&gt;
+&lt;p&gt;We kept changing our short term goals to match whatever was profitable at the moment, to not be confronted with the implications and sacrifices of a long term plan.&lt;/p&gt;
+&lt;p&gt;The business model needs to be robust and if you find yourself changing it too often, or making too many exceptions to your plan, you better take a pause and rethink it from scratch.&lt;/p&gt;
+&lt;p&gt;At the same time fear kept us inside our confort zone. We only did what we could do or completely understand ourselves. For example we never had a proper marketing plan because we&amp;#8217;re not marketing guys. What we should have done instead is identify the roles we needed to make the business succeed and hire appropriate people.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Many people think about entrepreneurship just as having a better or cooler job. I&amp;#8217;m finally starting to see the difference between &amp;#8216;working in a business&amp;#8217; and &amp;#8216;running a business&amp;#8217;. Look at your own boss: is it &lt;em&gt;working&lt;/em&gt; in the business (making the products/services himself)? Chances are he&amp;#8217;s not. Is he &lt;em&gt;running&lt;/em&gt; his business? Probably yes, and he&amp;#8217;s definitely making more money than you are.&lt;/p&gt;
+&lt;p&gt;There are so many activities that my business didn&amp;#8217;t properly take into account, from planning to marketing to resource management and task delegation. This first entreprenurial adventure has been a great experience and a good chance to see different aspects of a business and I&amp;#8217;m confident this will help me a lot on my next attempt.&lt;/p&gt;
+&lt;p&gt;If you run your own business and it hasn&amp;#8217;t succeeded the way you wanted it to, please share your experience in the comments.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Replace New Year's resolution with 12 monthly resolutions</title>
+   <link href="http://paolodona.com/2009/07/07/replace-year-resolution-with-12-monthly-resolutions.html"/>
+   <updated>2009-07-07T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2009/07/07/replace-year-resolution-with-12-monthly-resolutions</id>
+   <content type="html">&lt;p&gt;Those of you who are close to me know that I got into a kind of &lt;a href=&quot;http://www.everydaysystems.com/podcast/episode.php?id=16&quot;&gt;monthly resolutions&lt;/a&gt; challenge this year. I&amp;#8217;ve been doing this for 6 months now so I wanna take you through my progress.&lt;/p&gt;
+&lt;h4&gt;What&amp;#8217;s a monthly resolution?&lt;/h4&gt;
+&lt;p&gt;Instead of having a big new year&amp;#8217;s resolution, which I inevitably failed to achieve year after year, I decided to break down my goals into small and more manageable monthly bits. The base line is: Stick with one and only one goal for a month, after which chances are it will become a habit, enabling you to move on to the next thing.&lt;br /&gt;
+This is a quite clever way of approaching resolutions, as it puts almost no pressure on you and can lead to good life-changing habits.&lt;/p&gt;
+&lt;p&gt;Here are my resolutions so far:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;January: Set my 3 Most Important Tasks (MITs) each morning.&lt;/li&gt;
+	&lt;li&gt;February: Become a early riser.&lt;/li&gt;
+	&lt;li&gt;March: Eat better.&lt;/li&gt;
+	&lt;li&gt;April: Give up coffee.&lt;/li&gt;
+	&lt;li&gt;May: Cycle to work every day.&lt;/li&gt;
+	&lt;li&gt;June: Play my guitar half-an-hour a day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;So, how has it been going?&lt;/h4&gt;
+&lt;p&gt;I&amp;#8217;m quite happy with the results, even if I&amp;#8217;ve not been 100% diligent. Some resolutions have worked better than others. But I can say this is the first time in my life I&amp;#8217;ve been able to change my habits so effectively.&lt;/p&gt;
+&lt;h4&gt;January: Set the 3 MITs for the day.&lt;/h4&gt;
+&lt;p&gt;This involves identifying 3 must-do tasks for the day and writing them down on a piece of paper to carry in your wallet all day long. They don&amp;#8217;t need to be big things. Just think of them as small steps towards your long-term goals (eg: call that guy to help you out on you project, call the bank to set up a merchant account, and so on).&lt;br /&gt;
+It&amp;#8217;s a lot easier to achieve goals when you plan them in advance, otherwise you risk having a confused day and being constantly pulled away from your priorities by all sorts of events.&lt;/p&gt;
+&lt;p&gt;I stuck with this habit for 2 solid months and then lost it a bit, definitely one of the most challenging habits of all to form. I&amp;#8217;ll probably try to write down the MITs for a day the night before and see if it gets any easier.&lt;/p&gt;
+&lt;p&gt;You can read more about this topic here: &lt;br /&gt;
+&amp;raquo; &lt;a href=&quot;http://zenhabits.net/2007/02/purpose-your-day-most-important-task&quot;&gt;Purpose your day: most important tasks&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;February: Become an early riser&lt;/h4&gt;
+&lt;p&gt;The best results have come from getting up early. I had wanted to do this for a long time because there are so many things I want to do and always too little time. Also, I didn&amp;#8217;t want to sacrifice the lovely evenings I usually spend with my girlfriend or playing guitar.&lt;/p&gt;
+&lt;p&gt;To begin, I decided to wake up at exactly the same time every morning. Then I bought a &lt;a href=&quot;http://www.lumie.com/shop/products/bodyclock-starter-25&quot;&gt;bodyclock&lt;/a&gt; and started waking up 15 minutes earlier every week, finally settling for 6:30am.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m now constantly getting up at 6:30 during the week and can easily work for an hour and a half on projects of mine before going to work.&lt;br /&gt;
+It&amp;#8217;s amazing how powerful a productivity booster this is. I&amp;#8217;ve established a morning routine (wake up/shower/breakfast/work) that makes me feel proud of my day even before it has even really begun!&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re interested in becoming a early riser, read:&lt;br /&gt;
+&amp;raquo; &lt;a href=&quot;http://www.stevepavlina.com/blog/2005/05/how-to-become-an-early-riser/&quot;&gt;How to become an early riser&lt;/a&gt;&lt;br /&gt;
+&amp;raquo; &lt;a href=&quot;http://zenhabits.net/2007/05/10-benefits-of-rising-early-and-how-to-do-it/&quot;&gt;10 Benefits of rising early and how to do it&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;March: Eat slightly better&lt;/h4&gt;
+&lt;p&gt;Plain and simple: Eat at least 1 piece of fruit for breakfast and 1 serving of vegetables for dinner. Every day. If you manage to buy fruit and salad while at the grocery store, that&amp;#8217;s pretty easy to achieve. I love apples and bananas for breakfast, and &lt;b&gt;la bai cai&lt;/b&gt; (hot and sour cabbage) plus rice for dinner.&lt;/p&gt;
+&lt;p&gt;If you want to eat healthily and love Asian food, I suggest you read &lt;a href=&quot;http://www.chinesedontcountcalories.com/&quot;&gt;Why the Chinese don&amp;#8217;t count calories&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;April: Give up coffee&lt;/h4&gt;
+&lt;p&gt;I don&amp;#8217;t like coffee, and I realized that the 3-to-4 cups of coffee I used to drink a day were only useful for keeping me awake. I didn&amp;#8217;t enjoy them. &lt;br /&gt;
+And I thought, why do I feel sleepy in the first place? Am I eating well enough? Am I getting enough sleep?&lt;br /&gt;
+Programmer culture seems to worship coffee to an extent that I do not really understand. In a world in which technology and progress should make our life easier and less stressful, we always worry about performing at a faster pace. Giving up coffee is just a reflection of my inner pace change. Take it easy and enjoy the journey.&lt;/p&gt;
+&lt;p&gt;If interested in giving up coffee:&lt;br /&gt;
+&amp;raquo; &lt;a href=&quot;http://www.stevepavlina.com/blog/2005/05/how-to-give-up-coffee/&quot;&gt;How to give up coffee&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;May: Cycle to work every day&lt;/h4&gt;
+&lt;p&gt;I&amp;#8217;m in my underpants in front of the mirror, staring at my pale body. I&amp;#8217;m not fat, but let&amp;#8217;s be honest, I&amp;#8217;m definitely not fit. All these 10 years of programming are really starting to show, and the fact that my heart pumps hard whenever I walk for more than 10 minutes should be a clear warning.&lt;br /&gt;
+So to start off nice and easy I just bought a &lt;a href=&quot;http://lh6.ggpht.com/_aGNKixInRkE/SlGrlune9DI/AAAAAAAAGHc/_VegBxaL0Zc/s800/se-draft-lite-2009-singlespeed-bike.jpg&quot;&gt;bike&lt;/a&gt; and got rid of my monthly underground pass. That&amp;#8217;s feasible, as my workplace is only 3 miles away from my house, making it a perfect morning ride to work. A nice added benefit is that I’ll cover the investment in 3 months and start saving money after that.&lt;/p&gt;
+&lt;h4&gt;June: Play guitar half an hour a day&lt;/h4&gt;
+&lt;p&gt;As some of you may know, I used to be a guitar player. I was in a successful little rock band, and at some point of my life I was almost tempted to keep doing that for a living. I Well, now with being involved in software development, is should pretty clear that I gave up.&lt;br /&gt;
+It&amp;#8217;s a shame I&amp;#8217;m not playing on a regular basis, though, because it&amp;#8217;s a very engaging and exciting hobby.&lt;/p&gt;
+&lt;p&gt;After 10 years of complete inactivity, my previous band members decided to organize &amp;#8220;the farewell gig we never had&amp;#8221;, so I&amp;#8217;m kind of forced to play every day and sharpen my skills again!&lt;br /&gt;
+Ten songs a day keep the programmer away! &lt;br /&gt;
+Here&amp;#8217;s the website of my former band: &lt;a href=&quot;http://www.rambass.com&quot;&gt;http://www.rambass.com&lt;/a&gt; (guess which one is me), I&amp;#8217;ll be playing in Italy on July 31.&lt;/p&gt;
+&lt;p&gt;If you want to learn to play guitar, take a look at these awesome lessons: &lt;a href=&quot;http://www.justinguitar.com&quot;&gt;http://www.justinguitar.com&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Bottom line&lt;/h4&gt;
+&lt;p&gt;I&amp;#8217;m not a very strong-willed person, but these monthly resolutions are really shaping new habits I&amp;#8217;m very proud of. If you feel there&amp;#8217;s something you&amp;#8217;d like to change about yourself, try this method, and I guarantee your goals will be a lot easier to achieve.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>A bunch of new books</title>
+   <link href="http://paolodona.com/2009/07/02/a-bunch-of-new-books.html"/>
+   <updated>2009-07-02T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2009/07/02/a-bunch-of-new-books</id>
+   <content type="html">&lt;p&gt;Given I&amp;#8217;ve chosen to have no TV set at home, I&amp;#8217;ve been doing a lot of reading lately. I finished a couple of great inspirational books that I really suggest you to read:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tinyurl.com/ll4d6d&quot;&gt;4 hour work week&lt;/a&gt; (the best book I&amp;#8217;ve read in years!)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tinyurl.com/mer744&quot;&gt;The magic of thinking big&lt;/a&gt; (and why being a positive person is actually a good thing)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And here a bunch more I just ordered on Amazon:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tinyurl.com/n8uft5&quot;&gt;The E-myth revisited&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tinyurl.com/mje8kr&quot;&gt;The 22 Immutable laws of marketing&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tinyurl.com/n3xbkl&quot;&gt;The 80/20 Principle: The Secret of Achieving More with Less&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tinyurl.com/ney5hz&quot;&gt;Letters from a Stoic: Epistulae Morales AD Lucilium&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These should fill my free time in the next weeks. &lt;br /&gt;
+I love inspirational books, and entrepreneurship-oriented ones.&lt;/p&gt;
+&lt;p&gt;Have you guys got any ideas for my next order? Anything interesting you&amp;#8217;ve recently read?&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Back to a proper Blog</title>
+   <link href="http://paolodona.com/2009/06/30/back-to-a-proper-blog.html"/>
+   <updated>2009-06-30T00:00:00+01:00</updated>
+   <id>http://paolodona.com/2009/06/30/back-to-a-proper-blog</id>
+   <content type="html">&lt;p&gt;As my readers surely noticed, in the past 10 months I run a micro blog consisting of a subset of my Twitter updates.&lt;/p&gt;
+&lt;p&gt;I found the experiment interesting, and it&amp;#8217;s amazing how much information you can put in 140 characters. At the same time I find it a bit limiting, for the following reasons:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;I can&amp;#8217;t use twitter for &amp;#8216;real&amp;#8217; twitter updates, as it pollutes the blog&lt;/li&gt;
+	&lt;li&gt;I couldn&amp;#8217;t find a straightforward way to filter replies&lt;/li&gt;
+	&lt;li&gt;I&amp;#8217;d love to write some more, some times&lt;/li&gt;
+	&lt;li&gt;The blog doesn&amp;#8217;t get indexed correctly, as the twitter integration is done via Javascript&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;#8217;s why I&amp;#8217;m switching back to a normal blog. There are a bunch of things I&amp;#8217;ll post about in the forthcoming weeks:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;My entrepreneurial experiments&lt;/li&gt;
+	&lt;li&gt;My career development&lt;/li&gt;
+	&lt;li&gt;The life of &amp;#8220;the Italian guy&amp;#8221;, in London&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hope you enjoy the change and keep the conversation open with your comments!&lt;br /&gt;
+You can still follow me on &lt;a href=&quot;http://twitter.com/paolodona&quot;&gt;Twitter&lt;/a&gt;, and subscribe to my &lt;a href=&quot;http://feeds.feedburner.com/Paolodona&quot;&gt;feed&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;#8212;Paolo&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>File Encoding Conversion</title>
+   <link href="http://paolodona.com/2008/02/27/File-encoding-conversion.html"/>
+   <updated>2008-02-27T00:00:00+00:00</updated>
+   <id>http://paolodona.com/2008/02/27/File-encoding-conversion</id>
+   <content type="html">&lt;p&gt;This morning I struggled a bit to find  a decent encoding converter for osx&amp;#8230; from time to time I get stuck on encoding issues so I wanted to have something &amp;#8216;friendly&amp;#8217;  to handle this kind of problems&amp;#8230;&lt;/p&gt;
+&lt;p&gt;I found &lt;a href=&quot;http://free.abracode.com/cyclone/&quot;&gt;Cyclone&lt;/a&gt; based on &lt;a href=&quot;http://developer.apple.com/sdk/&quot;&gt;Apple Text Encoding Converter&lt;/a&gt; (look for &lt;span class=&quot;caps&quot;&gt;TEC&lt;/span&gt;) but it kept failing in some strange ways (It gave me weird messages about converters creation).  After googling for a while I gave up. It seems there are no good-free-&lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt; alternatives on the net&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Sometimes the solution is closer than you think and the good old &lt;a href=&quot;http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html&quot;&gt;iconv&lt;/a&gt; rescued me in a snap:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[paolo&lt;/code&gt;fingus]$ iconv -f &lt;span class=&quot;caps&quot;&gt;UTF&lt;/span&gt;-16 -t &lt;span class=&quot;caps&quot;&gt;UTF&lt;/span&gt;-8 utf16_file.txt &amp;gt; utf8_file.txt@&lt;/p&gt;
+&lt;p&gt;you can list the available encodings with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[paolo&lt;/code&gt;fingus]$ iconv -l@&lt;/p&gt;
+&lt;p&gt;The cool part is you can use it in conjunction with &lt;a href=&quot;http://www.bestechvideos.com/2007/04/29/textmate-filter-through-command&quot;&gt;TextMate&amp;#8217;s Filter Through Command&lt;/a&gt; feature thus enabling  in-editor lightning-fast conversions.&lt;/p&gt;
+&lt;p&gt;The only missing part was discovering the original file&amp;#8217;s encoding, in order to pass iconv the correct -f option. The not-so-reliable way I used was to open the file with Firefox and inspect the encoding using the &lt;strong&gt;View &amp;#8594; Character Encoding&lt;/strong&gt; menu item.&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s it,  problem solved. &lt;br /&gt;
+If you know better ways to do this&amp;#8230; let me know!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>To my email driven friends</title>
+   <link href="http://paolodona.com/2008/01/10/email-is-not-a-todo-list.html"/>
+   <updated>2008-01-10T00:00:00+00:00</updated>
+   <id>http://paolodona.com/2008/01/10/email-is-not-a-todo-list</id>
+   <content type="html">&lt;p&gt;I wanted to report a great video I discovered trough &lt;a href=&quot;http://www.presentationzen.com/presentationzen/2007/08/inbox-zero.html&quot;&gt;www.presentationzen.com&lt;/a&gt;. I heartily share its content so&amp;#8230; keep reading!&lt;/p&gt;
+&lt;p&gt;I have a bad relationship with email. It&amp;#8217;s not that I don&amp;#8217;t like them but I think that checking the inbox too often is a compulsive action, not a necessity.&lt;br /&gt;
+I hate those email clients which notify me when a new mail arrives. It&amp;#8217;s distracting&amp;#8230; it&amp;#8217;s totally unproductive&amp;#8230; I mean, the power of the email is that you can receive messages while offline or busy and you can read them when you want to. &lt;br /&gt;
+Whenever I find myself repeatedly checking my inbox I feel like a dog waiting for a cookie. And even when people are not compulsively checking their inboxes&amp;#8230; they&amp;#8217;re probably scanning their past messages in order to organize their days.&lt;br /&gt;
+Scanning messages over and over again. Not a good practice if you want to get things done. &lt;br /&gt;
+Checking emails every couple of hours is more than enough.&lt;/p&gt;
+&lt;p&gt;Are email clients becoming our new to-do lists? Should we spend so much time on our email inbox? Should our lives be email driven?&lt;/p&gt;
+&lt;p&gt;On this subject &lt;a href=&quot;http://www.merlinmann.com&quot;&gt;Merlin Mann&lt;/a&gt; gave us a &lt;a href=&quot;http://video.google.com/videoplay?docid=973149761529535925&amp;amp;hl=en&quot;&gt;great presentation&lt;/a&gt; inlined here:&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&quot;http://video.google.com/googleplayer.swf?docId=973149761529535925&amp;amp;hl=en&quot; type=&quot;application/x-shockwave-flash&quot; id=&quot;VideoPlayback&quot; style=&quot;width: 425px; height: 346px;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Hope you enjoy it as much as I did.&lt;/p&gt;</content>
+ </entry>
+ 
+</feed>

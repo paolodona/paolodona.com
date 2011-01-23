@@ -1,5 +1,3 @@
-default_run_options[:pty] = true
-
 set :application, "paolodona.com"
 set :repository,  "git@github.com:paolodona/paolodona.com.git"
 
@@ -9,8 +7,15 @@ set :user, 'paolo'
 set :deploy_to, "/apps/#{application}"
 set :scm, :git
 
-role :app, "paolodona.com"
-role :web, "paolodona.com"
+role :app, "173.45.224.41"
+role :web, "173.45.224.41"
+
+after :deploy, :regenerate_site
+
+desc "regenerate site"
+task :regenerate_site do
+  run "cd #{current_path}; jekyll --lsi"
+end 
 
 namespace :deploy do
   task :restart do
