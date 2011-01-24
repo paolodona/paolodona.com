@@ -1,4 +1,5 @@
 default_run_options[:pty] = true
+ssh_options[:compression] = false 
 
 set :application, "paolodona.com"
 set :repository,  "git@github.com:paolodona/paolodona.com.git"
