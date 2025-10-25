@@ -1,0 +1,29 @@
+{
+  "menuItems": [
+    {
+      "name": "staycity.com",
+      "url": "https://www.staycity.com",
+      "title": "Staycity - Urban Aparthotels"
+    },
+    {
+      "name": "wilde.com",
+      "url": "https://www.wilde.com",
+      "title": "Wilde - Boutique Luxury Aparthotels"
+    },
+    {
+      "name": "homestay.com",
+      "url": "https://www.homestay.com",
+      "title": "Homestay.com - Home away from home"
+    },
+    {
+      "name": "My LinkedIn",
+      "url": "https://www.linkedin.com/in/paolodona",
+      "title": "My LinkedIn Profile"
+    },
+    {
+      "name": "We're hiring!",
+      "url": "https://careers.staycitygroup.com/",
+      "title": "Staycity Group Careers Page"
+    }
+  ]
+}

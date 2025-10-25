@@ -1,0 +1,460 @@
+/* Custom colors and theme overrides for Paolo Dona website */
+
+body {
+	background: #F6F6F6;
+	color: #5d6061;
+}
+
+h1, h2, h3, h4, h5,
+h1 a, h2 a, h3 a, h4 a, h5 a {
+	color: #444444;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+	color: #f0a94d;
+}
+
+a {
+	color: #529ECC;
+}
+
+a:hover {
+	color: #f0a94d;
+}
+
+::-moz-selection { background: #529ECC; color: #F6F6F6; text-shadow: none; }
+::selection { background: #529ECC; color: #F6F6F6; text-shadow: none; }
+
+.header-image-wrap,
+.header,
+.header .avatar-image {
+	background-color: #21272e;
+}
+
+.header-overlay {
+	background: rgba(33,39,46,0.2);
+}
+
+.header-title__name {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 30px;
+	letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+	.header-title__name {
+		font-size: 60px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.header-title__name {
+		font-size: 80px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.body-ready .header-content,
+	.permalink .header-content,
+	.index.tagged .header-content,
+	.index.search .header-content {
+	-webkit-transform: translate(-50%, -50%) scale(1) rotate(-3deg);
+	-moz-transform: translate(-50%, -50%) scale(1) rotate(-3deg);
+	-o-transform: translate(-50%, -50%) scale(1) rotate(-3deg);
+	-ms-transform: translate(-50%, -50%) scale(1) rotate(-3deg);
+	transform: translate(-50%, -50%) scale(1) rotate(-3deg);
+	}
+}
+
+.header-logo {
+	max-width: 400px;
+}
+
+/* Hamburger menu - always visible on top left */
+.menu-toggle {
+	position: fixed !important;
+	top: 30px !important;
+	left: 25px !important;
+	right: auto !important;
+	z-index: 1001 !important;
+	display: block !important;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 12px;
+	border-radius: 4px;
+	transition: background 0.3s ease;
+}
+
+.menu-toggle:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.menu-toggle .menu-toggle-hamburger span,
+.menu-toggle .menu-toggle-hamburger span:before,
+.menu-toggle .menu-toggle-hamburger span:after {
+	background: #ffffff;
+}
+
+/* Full-screen overlay menu - completely rewritten for simplicity */
+.menu {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100vw !important;
+	height: 100vh !important;
+	background: rgba(255, 255, 255, 0.98) !important;
+	z-index: 1000 !important;
+	opacity: 0 !important;
+	visibility: hidden !important;
+	overflow: hidden !important;
+	/* Remove all transforms and transitions from base theme */
+	transform: none !important;
+	transition: opacity 0.3s ease !important;
+	/* Prevent clicks when menu is closed */
+	pointer-events: none !important;
+}
+
+body.menu-on .menu {
+	opacity: 1 !important;
+	visibility: visible !important;
+	pointer-events: auto !important;
+}
+
+/* Center the menu content vertically and horizontally */
+.menu-wrap {
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+	width: 100% !important;
+	max-width: none !important;
+	padding: 40px 20px !important;
+	text-align: center !important;
+	/* Remove all base theme transitions */
+	transition: none !important;
+}
+
+.menu-list {
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	/* Remove all base theme positioning */
+	position: static !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+	transform: none !important;
+	transition: none !important;
+	float: none !important;
+	top: auto !important;
+	left: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+}
+
+.menu-list__item {
+	margin: 25px 0 !important;
+	padding: 0 !important;
+	display: block !important;
+	position: static !important;
+	white-space: normal !important;
+}
+
+.menu-list__link {
+	font-size: 28px !important;
+	font-weight: 600 !important;
+	color: #000000 !important;
+	text-decoration: none !important;
+	display: inline-block !important;
+	padding: 10px 20px !important;
+	text-transform: none !important;
+	/* Remove base theme transitions for static appearance */
+	transition: color 0.2s ease !important;
+	transform: none !important;
+}
+
+.menu-list__link:hover {
+	color: #529ECC !important;
+}
+
+@media only screen and (min-width: 768px) {
+	.menu-list__link {
+		font-size: 42px !important;
+	}
+
+	.menu-list__item {
+		margin: 35px 0 !important;
+	}
+}
+
+::-webkit-input-placeholder {
+	color: #666666;
+}
+
+:-moz-placeholder {
+	color: #666666;
+}
+
+::-moz-placeholder {
+	color: #666666;
+}
+
+:-ms-input-placeholder {
+	color: #666666;
+}
+
+.footer {
+	background: rgba(219,222,223, 0.4);
+}
+
+.footer span,
+.footer .credit,
+.footer .credit a {
+	color: #5d6061;
+}
+
+.footer .scroll-top {
+	background: #F6F6F6;
+	color: #5d6061;
+}
+
+.footer .scroll-top:hover {
+	background: #f0a94d;
+	color: #F6F6F6;
+}
+
+/* Override page-intro to always be left-aligned and fix positioning */
+.page-intro {
+	text-align: left !important;
+}
+
+/* Fix intro content positioning - remove transforms that push it above viewport */
+.page-intro .article-content {
+	position: static !important;
+	transform: none !important;
+	opacity: 1 !important;
+	padding: 40px 20px !important;
+}
+
+@media only screen and (min-width: 768px) {
+	.page-intro .article-content {
+		padding: 60px 40px !important;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.page-intro .article-content {
+		padding: 80px 60px !important;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.page-intro .article-content {
+		padding: 100px 80px !important;
+	}
+}
+
+.body-ready .page-intro .article-content {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+.page-intro__description {
+	color: #30363c;
+	font-size: 20px;
+	letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+	.page-intro__description {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.page-intro__description {
+		font-size: 40px;
+	}
+}
+
+/* New styles for content sections */
+.intro {
+	font-size: 20px;
+	line-height: 1.4;
+	color: #30363c;
+	font-weight: bold;
+	letter-spacing: -0.02em;
+	margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+	.intro {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.intro {
+		font-size: 40px;
+	}
+}
+
+.about {
+	font-size: 16px;
+	line-height: 1.8;
+	color: #5d6061;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	max-width: 800px;
+}
+
+@media only screen and (min-width: 768px) {
+	.about {
+		font-size: 18px;
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.about {
+		font-size: 20px;
+		margin-top: 60px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.page-intro__scroll {
+		color: #dbdedf;
+	}
+}
+
+.social-menu li a {
+	border-color: #529ECC;
+	color: #529ECC;
+}
+
+.social-menu li a:hover {
+	background: #529ECC;
+	color: #F6F6F6;
+}
+
+.post-header__timestamp,
+.permalink .post-header__timestamp:hover {
+	color: #dbdedf;
+}
+
+.post-header__timestamp:hover {
+	color: #5d6061;
+}
+
+article {
+	border-color: #dbdedf;
+}
+
+article hr {
+	background: #dbdedf;
+}
+
+article blockquote {
+	border-left-color: #dbdedf;
+}
+
+article.type_quote .quote {
+	color: #444444;
+}
+
+article.type_answer .answer-inner {
+	background: #F6F6F6;
+	border-color: #dbdedf;
+}
+
+article.type_answer .answer-inner:after {
+	border-bottom-color: #F6F6F6;
+}
+
+article.type_answer .answer-inner:before {
+	border-bottom-color: #dbdedf;
+}
+
+@media only screen and (min-width: 768px) {
+	article.type_answer .answer-inner:after {
+		border-left-color: #F6F6F6;
+		border-bottom-color: transparent;
+	}
+	article.type_answer .answer-inner:before {
+		border-left-color: #dbdedf;
+		border-bottom-color: transparent;
+	}
+}
+
+article.type_chat .line {
+	border-top-color: #dbdedf;
+}
+
+article.type_link .the-link {
+	background: #529ECC;
+	color: #F6F6F6;
+}
+
+article.type_link .the-link:hover {
+	background: #f0a94d;
+}
+
+.icons li.sharer ul {
+	background: #F6F6F6;
+	border-color: #dbdedf;
+}
+
+.icons li.sharer ul:before {
+	border-top-color: #dbdedf;
+}
+
+.post-footer a {
+	color: #5d6061;
+}
+
+.instagram-feed .instagram-overlay {
+	background: rgba(240,169,77, 0.4);
+}
+
+.instagram-feed .instagram-link {
+	background: #529ECC;
+	color: #F6F6F6;
+}
+
+.instagram-feed .instagram-link:hover {
+	background: #f0a94d;
+}
+
+article.type_pagination .pagination a {
+	background: #529ECC;
+	color: #F6F6F6;
+}
+
+article.type_pagination .pagination a:hover {
+	background: #f0a94d;
+	color: #F6F6F6;
+}
+
+article.type_pagination.pagination_load-more .article-content,
+article.type_pagination.pagination_infinite-scroll .article-content {
+	background: #529ECC;
+	color: #F6F6F6;
+}
+
+article.type_pagination.pagination_load-more .article-content:hover,
+article.type_pagination.pagination_load-more.loading .article-content,
+article.type_pagination.pagination_infinite-scroll .article-content {
+	background: #f0a94d;
+	color: #F6F6F6;
+}
+
+.post-nav a {
+	background: #529ECC;
+	color: #F6F6F6;
+}
+
+.post-nav a:hover {
+	background: #f0a94d;
+	color: #F6F6F6;
+}
