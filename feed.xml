@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Paolo Donà — Blog</title>
+		<link>https://paolodona.com/blog.html</link>
+		<atom:link href="https://paolodona.com/feed.xml" rel="self" type="application/rss+xml" />
+		<description>Notes and writing by Paolo Donà on technology, leadership, AI and life.</description>
+		<language>en</language>
+		<lastBuildDate>Fri, 01 May 2026 12:06:14 GMT</lastBuildDate>
+		<item>
+			<title>Speaking at Stripe Sessions 2026 in San Francisco</title>
+			<link>https://paolodona.com/blog/stripe-sessions-2026.html</link>
+			<guid isPermaLink="true">https://paolodona.com/blog/stripe-sessions-2026.html</guid>
+			<pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+			<description>Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.</description>
+		</item>
+	</channel>
+</rss>

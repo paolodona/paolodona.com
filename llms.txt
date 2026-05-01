@@ -1,0 +1,28 @@
+# Paolo Donà
+
+> Software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.
+
+Personal website of Paolo Donà (paolodona.com). Static HTML — all content is in the page bodies, no JavaScript required to read it.
+
+## Pages
+
+- [About](https://paolodona.com/): Bio, current role, interests, and how to get in touch.
+- [Work](https://paolodona.com/work.html): Career history — Staycity Group, Homestay.com, NiftySchool / 4niches, Mobile Interactive Group, and earlier roles.
+- [Side Projects](https://paolodona.com/side-projects.html): Whatevernote (a fast distributed offline-first note app), the Este Bike cycling-club website, and other experiments.
+- [Bookshelf](https://paolodona.com/bookshelf.html): Books currently being read or recently enjoyed.
+- [Blog](https://paolodona.com/blog.html): Notes and writing.
+
+## Blog posts
+
+- [Speaking at Stripe Sessions 2026 in San Francisco](https://paolodona.com/blog/stripe-sessions-2026.html) (30th April 2026) — Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/paolodona
+- Email: paolo.dona@gmail.com
+- Work email: paolo.dona@staycity.com
+
+## Feeds
+
+- RSS: https://paolodona.com/feed.xml
+- Sitemap: https://paolodona.com/sitemap.xml

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Speaking at Stripe Sessions 2026 in San Francisco — Paolo Don&agrave;</title>
+	<meta name="author" content="Paolo Don&agrave;">
+	<meta name="description" content="Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.">
+	<link rel="canonical" href="https://paolodona.com/blog/stripe-sessions-2026.html">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Paolo Don&agrave;">
+	<meta property="og:title" content="Speaking at Stripe Sessions 2026 in San Francisco">
+	<meta property="og:description" content="Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.">
+	<meta property="og:url" content="https://paolodona.com/blog/stripe-sessions-2026.html">
+	<meta property="og:image" content="https://paolodona.com/img/paolodona.png">
+	<meta property="article:author" content="Paolo Don&agrave;">
+	<meta property="article:published_time" content="2026-04-30">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Speaking at Stripe Sessions 2026 in San Francisco">
+	<meta name="twitter:description" content="Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.">
+	<meta name="twitter:image" content="https://paolodona.com/img/paolodona.png">
+	<link rel="shortcut icon" href="/img/paolodona.png">
+	<link rel="alternate" type="application/rss+xml" title="Paolo Don&agrave; — Blog" href="/feed.xml">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/custom.css">
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Speaking at Stripe Sessions 2026 in San Francisco",
+  "description": "Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.",
+  "datePublished": "2026-04-30",
+  "author": {
+    "@type": "Person",
+    "name": "Paolo Donà",
+    "url": "https://paolodona.com/"
+  },
+  "mainEntityOfPage": "https://paolodona.com/blog/stripe-sessions-2026.html",
+  "image": "https://paolodona.com/img/paolodona.png"
+}
+	</script>
+</head>
+<body>
+	<main class="page">
+		<nav class="site-nav" aria-label="Primary">
+			<a href="/">About</a>
+			<a href="/work.html">Work</a>
+			<a href="/side-projects.html">Side Projects</a>
+			<a href="/bookshelf.html">Bookshelf</a>
+			<a href="/blog.html">Blog</a>
+		</nav>
+
+		<article>
+			<h1 class="post__title">Speaking at Stripe Sessions 2026 in San Francisco</h1>
+			<p class="post__date">30th April 2026</p>
+			<div class="post__body">
+<div class="gallery">
+    <a class="gallery__hero" href="/img/blog/stripe-sessions-2026/1.jpg" data-lightbox>
+        <img src="/img/blog/stripe-sessions-2026/1.jpg" alt="Paolo on stage at Stripe Sessions 2026 — Staycity slide on the side screen">
+    </a>
+    <div class="gallery__row">
+        <a href="/img/blog/stripe-sessions-2026/2.jpg" data-lightbox>
+            <img src="/img/blog/stripe-sessions-2026/2.jpg" alt="Wide shot of the audience at Stripe Sessions 2026">
+        </a>
+        <a href="/img/blog/stripe-sessions-2026/3.jpg" data-lightbox>
+            <img src="/img/blog/stripe-sessions-2026/3.jpg" alt="Paolo presenting an architecture slide">
+        </a>
+        <a href="/img/blog/stripe-sessions-2026/4.jpg" data-lightbox>
+            <img src="/img/blog/stripe-sessions-2026/4.jpg" alt="Fireside discussion with James Lemon and Peter Hammer">
+        </a>
+    </div>
+</div>
+
+<p>On 30 April 2026 I had the pleasure of speaking at <strong>Stripe Sessions</strong> in San Francisco, in a breakout titled <em>&quot;Under one roof: unifying the guest experience&quot;</em>, alongside <a href="https://www.linkedin.com/in/james-lemon/">James Lemon</a> (Global GTM Lead, Hospitality and Travel at Stripe) and <a href="https://www.linkedin.com/in/peterfhammer/">Peter Hammer</a> (Managing Director, Global Travel and Hospitality Industry Lead at Slalom).</p>
+<p>The premise of the session was simple: <strong>guests don&#39;t think in channels</strong>. They book online, check in at a kiosk, order room service from their phone, and expect it all to feel like one experience. Yet on the operator side that one experience is normally stitched together from a dozen different systems — each with its own payment provider, its own reconciliation quirks, and its own way of breaking on a Saturday night.</p>
+<p>I shared the blueprint we&#39;ve been executing at Staycity Group to unify our multi-channel payment infrastructure across our 41 properties in 20+ cities across 8 European countries.</p>
+<h2>What I covered</h2>
+<p>I started by setting the scene at Staycity six years ago: every channel — online checkout, front-desk and kiosk terminals, F&amp;B POS, the reservations call centre — running on a different payment provider, with reconciliation that was painful at best and impossible at worst (especially for refunds), and conversion that varied wildly by market because we couldn&#39;t always offer the locally preferred payment method or currency.</p>
+<p>We picked Stripe for four reasons that compound when you&#39;re operating across eight countries: a unified architecture across online, in-person and back-office; localised checkout that lets us switch on local payment methods and currencies as we expand; global scalability with local acquiring and built-in compliance; and deep technical integration with Oracle OPERA Cloud and Tevalis, our PMS and F&amp;B POS.</p>
+<p>The rollout was three stages. First we unified the financial infrastructure across our existing stack — online booking, the Stripe ↔ OPERA Cloud integration, and front-desk and kiosk terminals all at once, because refunds and stored cards are genuinely cross-channel. We started with a one-property POC and then deployed vertically across all 30 live properties in three months, with a single person running the rollout. Second, we turned on new payment methods market by market — Apple Pay, Google Pay, PayPal, iDEAL, Klarna, Revolut Pay and Link — and used the Stripe dashboard to A/B test where each one actually paid back. Third, and where we are now, we started layering in new revenue streams via the Stripe FX API for Multi-Currency Conversion: present prices in the guest&#39;s local currency, capture the FX margin that banks would otherwise take.</p>
+<p>The headline numbers: 17% decrease in checkout abandonment, 10% increase in authorisation rates, improved ROAS on direct bookings, and over $1M in incremental revenue from multi-currency conversion. Next up we&#39;re looking at Pay by Bank for corporate stays.</p>
+<p>The lesson I&#39;d give anyone considering this: build the business case first. Model conversion uplift against payment-method commissions, factor in MCC and Pay-by-Bank, and don&#39;t forget efficiency gains from unified reconciliation. When you add it all up on a platform you can genuinely build on, the ROI case becomes clear very quickly.</p>
+<h2>Reflections</h2>
+<p>The most rewarding part wasn&#39;t the 30 minutes on stage — it was the conversations afterwards with attendees. The level of curiosity, practical thinking, and creativity in the room really stood out. Several great exchanges on agentic commerce, on what loyalty looks like when AI agents do more of the booking, and on how to keep the physical guest experience unmistakably human as automation handles the menial bits.</p>
+<p>Big thanks to James Lemon and Peter Hammer for being such generous co-panellists, to the Stripe team for the invitation and the meticulous preparation, and to everyone who took the time to engage, challenge ideas, and share perspectives. Definitely one of the more energising rooms I&#39;ve been in this year.</p>
+
+			</div>
+		</article>
+
+		<footer class="site-footer">
+			<span>&copy; 2026 Paolo Don&agrave;</span>
+			<span><a href="https://www.linkedin.com/in/paolodona">LinkedIn</a> &middot; <a href="mailto:paolo.dona@gmail.com">Email</a></span>
+		</footer>
+	</main>
+	<script src="/js/lightbox.js" defer></script>
+</body>
+</html>
