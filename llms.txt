@@ -14,6 +14,7 @@ Personal website of Paolo Donà (paolodona.com). Static HTML — all content is 
 
 ## Blog posts
 
+- [Talking to Oracle OPERA in plain English](https://paolodona.com/blog/opera-mcp.html) (1st May 2026) — I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially "old-style enterprise" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.
 - [Speaking at Stripe Sessions 2026 in San Francisco](https://paolodona.com/blog/stripe-sessions-2026.html) (30th April 2026) — Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
 
 ## Contact

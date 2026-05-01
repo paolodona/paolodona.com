@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Talking to Oracle OPERA in plain English — Paolo Don&agrave;</title>
+	<meta name="author" content="Paolo Don&agrave;">
+	<meta name="description" content="I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially &quot;old-style enterprise&quot; systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.">
+	<link rel="canonical" href="https://paolodona.com/blog/opera-mcp.html">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Paolo Don&agrave;">
+	<meta property="og:title" content="Talking to Oracle OPERA in plain English">
+	<meta property="og:description" content="I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially &quot;old-style enterprise&quot; systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.">
+	<meta property="og:url" content="https://paolodona.com/blog/opera-mcp.html">
+	<meta property="og:image" content="https://paolodona.com/img/paolodona.png">
+	<meta property="article:author" content="Paolo Don&agrave;">
+	<meta property="article:published_time" content="2026-05-01">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Talking to Oracle OPERA in plain English">
+	<meta name="twitter:description" content="I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially &quot;old-style enterprise&quot; systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.">
+	<meta name="twitter:image" content="https://paolodona.com/img/paolodona.png">
+	<link rel="shortcut icon" href="/img/paolodona.png">
+	<link rel="alternate" type="application/rss+xml" title="Paolo Don&agrave; — Blog" href="/feed.xml">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/custom.css">
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Talking to Oracle OPERA in plain English",
+  "description": "I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially \"old-style enterprise\" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.",
+  "datePublished": "2026-05-01",
+  "author": {
+    "@type": "Person",
+    "name": "Paolo Donà",
+    "url": "https://paolodona.com/"
+  },
+  "mainEntityOfPage": "https://paolodona.com/blog/opera-mcp.html",
+  "image": "https://paolodona.com/img/paolodona.png"
+}
+	</script>
+</head>
+<body>
+	<main class="page">
+		<nav class="site-nav" aria-label="Primary">
+			<a href="/">About</a>
+			<a href="/work.html">Work</a>
+			<a href="/side-projects.html">Side Projects</a>
+			<a href="/bookshelf.html">Bookshelf</a>
+			<a href="/blog.html">Blog</a>
+		</nav>
+
+		<article>
+			<h1 class="post__title">Talking to Oracle OPERA in plain English</h1>
+			<p class="post__date">1st May 2026</p>
+			<div class="post__body">
+<p>If you have ever worked anywhere near a hotel, you know <strong>Oracle OPERA</strong>. It is the property management system that runs a huge slice of the world&#39;s hospitality industry, including all 41 of our properties at Staycity Group. It is powerful, it is comprehensive, and it is also a textbook &quot;old-style enterprise system&quot;: dense screens, deeply nested menus, two API generations layered on top of each other (the legacy OWS SOAP services and the modern OHIP REST APIs), and a learning curve that traditionally takes new analysts months to climb.</p>
+<p>I have been spending evenings and weekends building something to change that. It is called <code>opera-mcp</code>, and it is a <a href="https://modelcontextprotocol.io/">Model Context Protocol</a> server that gives any LLM — Claude, ChatGPT, our internal agents — direct, safe, natural-language access to OPERA. The result has genuinely surprised me, and the team using it.</p>
+<h2>What it actually is</h2>
+<p>Under the hood, <code>opera-mcp</code> is a small Node.js monorepo that:</p>
+<ul>
+<li>Indexes the <strong>3,196 OHIP REST operations</strong> across 46 modules, plus <strong>201 OWS SOAP operations</strong> across 12 services. That is the entire OPERA Cloud API surface, searchable.</li>
+<li>Exposes a handful of MCP tools — <code>ohip_execute</code>, <code>ows_execute</code>, <code>route_query</code>, <code>list_operations</code>, <code>find_equivalent</code>, plus log-query tools — that an LLM can call directly.</li>
+<li>Adds a <strong>discovery layer</strong> on top: synonym expansion, a 123-concept domain index, and a router that maps a fuzzy English question to the right API call (&quot;guests arriving tomorrow&quot; → the right OHIP reservation search with the right filters).</li>
+<li>Enforces <strong>safety by default</strong>: read-only mode is on unless explicitly disabled, destructive operations require a two-step confirm with an expiring token, and every call is logged with a correlation ID into a local SQLite store.</li>
+<li>Runs as a hosted MCP server on Azure behind Caddy, so anyone on the team can point Claude Desktop or Claude Code at it with a single API key and start asking questions.</li>
+</ul>
+<p>The whole thing is roughly 800 tests, several thousand lines of TypeScript, and zero hand-written API clients — the OHIP layer is fully generated from the OpenAPI specs Oracle ships.</p>
+<h2>What this looks like day-to-day</h2>
+<p>The shift, once it lands in someone&#39;s workflow, is jarring in the best way. A few real examples from the last few weeks:</p>
+<ul>
+<li><strong>&quot;How many room nights did our employees stay across the portfolio last quarter, by property?&quot;</strong> Previously: pull a folio extract, dump it into Excel, manually filter on the staff rate codes, pivot. Roughly half a day of work for an analyst who knows where to look. Now: one prompt. Claude calls <code>route_query</code>, walks through reservations and folios via the MCP, and comes back with the table — and the SQL-equivalent reasoning, so we can sanity-check it.</li>
+<li><strong>&quot;Find every reservation for John Smith across all our hotels and tell me which ones are still active.&quot;</strong> A cross-property profile + reservation lookup that used to require logging into each property individually. Now it is a single sentence.</li>
+<li><strong>&quot;What changed on confirmation 38291 in the last 24 hours, and who changed it?&quot;</strong> The MCP queries the OPERA audit log, dedups the noise, and explains what happened in English. The same answer used to require knowing which audit screen to open and how to read its abbreviations.</li>
+<li><strong>&quot;Why did this rate plan stop showing up on Booking.com last Tuesday?&quot;</strong> A diagnostic that used to bounce between three teams. The agent now pulls the rate availability, the channel mappings, and the recent OWS log entries, and points at the cause directly.</li>
+<li><strong>&quot;Build me a Python script that pulls availability for the next 90 days for IEHI0012 and writes it to a CSV.&quot;</strong> The agent uses the MCP to discover the right operation, calls it once to confirm the shape of the response, and then writes a working script. End-to-end, a few minutes.</li>
+</ul>
+<p>None of these are toy examples. They are tasks that used to live on someone&#39;s to-do list for days because the person who knew the screen path was busy.</p>
+<h2>Why an LLM-shaped interface is the right one for OPERA</h2>
+<p>I think the deeper lesson here is not specific to OPERA — it applies to every enterprise system of a certain age. Two things are simultaneously true:</p>
+<ol>
+<li><strong>The data and capabilities are extraordinary.</strong> Decades of domain modelling, every operational nuance you can imagine, every regulatory edge case, all of it captured in the schema.</li>
+<li><strong>The interface is a productivity tax.</strong> Forms designed in the early 2000s, terminology that only makes sense if you grew up in hospitality, dozens of mandatory fields where you only care about two.</li>
+</ol>
+<p>The traditional answer was &quot;build a custom UI on top of the API&quot;. That works, slowly, for the ten use cases you anticipate, and not at all for the hundred you don&#39;t. An MCP server inverts the problem. Instead of pre-building screens, you give the LLM the <em>whole API surface</em> plus enough metadata to reason about it, and the user describes what they want in their own words. The &quot;interface&quot; gets generated on the fly, every time, fitting the question that was actually asked.</p>
+<p>The classic enterprise-software complaint — &quot;the system can technically do that but no-one knows how&quot; — quietly disappears.</p>
+<h2>On safety, because someone always asks</h2>
+<p>OPERA is not a system you want an over-eager LLM doing creative writing on. A few non-negotiables baked in from day one:</p>
+<ul>
+<li><strong>Read-only by default.</strong> POST/PUT/PATCH/DELETE calls are blocked at the HTTP-client level unless the operator explicitly turns them on for a session.</li>
+<li><strong>Two-step confirm for any write.</strong> The MCP returns a preview with a token; the agent has to come back with the token to actually execute. No &quot;oops, I created 400 reservations&quot; stories.</li>
+<li><strong>Per-session credentials and isolation.</strong> Each connected user gets their own session context with their own hotel scope; nothing leaks between them.</li>
+<li><strong>Full audit trail.</strong> Every call, request, response, and correlation ID is persisted locally so we can review what the agents did.</li>
+<li><strong>A single ring-fenced test hotel</strong> where automated tests are allowed to do anything they want.</li>
+</ul>
+<p>These are not afterthoughts — they are why I am comfortable letting the team actually use this on production data.</p>
+<h2>The bigger picture</h2>
+<p>I keep coming back to a thought I shared at Stripe Sessions last week: the next wave of enterprise productivity is not going to come from yet another redesigned UI. It is going to come from putting our existing systems — the ones that already encode decades of business logic — behind LLM-shaped interfaces, and letting the agents do the menial wiring that humans currently do by hand.</p>
+<p>For us at Staycity, OPERA is the first big one. F&amp;B POS, channel manager, BI warehouse, and the rest of the stack are next. The pattern, once you have built it once, is the same: index the API surface, add a discovery layer, enforce safety at the gate, expose it as MCP, watch the team&#39;s &quot;how do I…&quot; questions turn into one-liners.</p>
+<p>If you operate any large enterprise system and you are wondering whether this approach makes sense for you, the honest answer is: it almost certainly does, and the building is much less work than you expect. Happy to compare notes — drop me a line.</p>
+
+			</div>
+		</article>
+
+		<footer class="site-footer">
+			<span>&copy; 2026 Paolo Don&agrave;</span>
+			<span><a href="https://www.linkedin.com/in/paolodona">LinkedIn</a> &middot; <a href="mailto:paolo.dona@gmail.com">Email</a></span>
+		</footer>
+	</main>
+	<script src="/js/lightbox.js" defer></script>
+</body>
+</html>
