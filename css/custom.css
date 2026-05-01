@@ -327,6 +327,25 @@ hr {
 	margin-top: 2px;
 }
 
+.book-grid--collapsed > li:nth-child(n+41) {
+	display: none;
+}
+
+.bookshelf-toggle {
+	display: inline-block;
+	margin-top: 24px;
+	padding: 0;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #529ECC;
+	color: #529ECC;
+	font: inherit;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.bookshelf-toggle:hover { color: #2c6c93; border-bottom-color: #2c6c93; }
+
 /* Footer */
 .site-footer {
 	margin-top: 64px;

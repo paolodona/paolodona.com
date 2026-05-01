@@ -84,18 +84,37 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://www.amazon.co.uk/Principles-Life-Work-Ray-Dalio/dp/1501124021" target="_blank" rel="noopener" title="Principles — Ray Dalio">
+				<a href="https://www.principles.com/" target="_blank" rel="noopener" title="Principles — Ray Dalio">
 					<img src="img/books/principles.jpg" alt="Principles by Ray Dalio">
 					<span class="book-caption">Principles<span class="book-author">Ray Dalio</span></span>
 				</a>
 			</li>
 			<li>
-				<a href="https://www.amazon.co.uk/Principles-Dealing-Changing-World-Order/dp/1982160276" target="_blank" rel="noopener" title="Principles for Dealing with the Changing World Order — Ray Dalio">
+				<a href="https://www.principles.com/" target="_blank" rel="noopener" title="Principles for Dealing with the Changing World Order — Ray Dalio">
 					<img src="img/books/changing-world-order.jpg" alt="Principles for Dealing with the Changing World Order by Ray Dalio">
 					<span class="book-caption">The Changing World Order<span class="book-author">Ray Dalio</span></span>
 				</a>
 			</li>
 		</ul>
+
+		<button type="button" class="bookshelf-toggle" hidden>Show older books</button>
+
+		<script>
+			(function () {
+				var grid = document.querySelector('.book-grid');
+				var toggle = document.querySelector('.bookshelf-toggle');
+				if (!grid || !toggle) return;
+				var LIMIT = 40;
+				var items = grid.querySelectorAll(':scope > li');
+				if (items.length <= LIMIT) return;
+				grid.classList.add('book-grid--collapsed');
+				toggle.hidden = false;
+				toggle.addEventListener('click', function () {
+					var collapsed = grid.classList.toggle('book-grid--collapsed');
+					toggle.textContent = collapsed ? 'Show older books' : 'Show fewer books';
+				});
+			})();
+		</script>
 
 		<footer class="site-footer">
 			<span>&copy; 2026 Paolo Don&agrave;</span>
