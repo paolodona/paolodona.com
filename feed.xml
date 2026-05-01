@@ -6,7 +6,7 @@
 		<atom:link href="https://paolodona.com/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Notes and writing by Paolo Donà on technology, leadership, AI and life.</description>
 		<language>en</language>
-		<lastBuildDate>Fri, 01 May 2026 12:26:14 GMT</lastBuildDate>
+		<lastBuildDate>Fri, 01 May 2026 21:26:58 GMT</lastBuildDate>
 		<item>
 			<title>Talking to Oracle OPERA in plain English</title>
 			<link>https://paolodona.com/blog/opera-mcp.html</link>
@@ -20,6 +20,13 @@
 			<guid isPermaLink="true">https://paolodona.com/blog/stripe-sessions-2026.html</guid>
 			<pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
 			<description>Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.</description>
+		</item>
+		<item>
+			<title>A merchandising audit nobody hired me to write</title>
+			<link>https://paolodona.com/blog/merchandising-audit.html</link>
+			<guid isPermaLink="true">https://paolodona.com/blog/merchandising-audit.html</guid>
+			<pubDate>Fri, 27 Feb 2026 00:00:00 GMT</pubDate>
+			<description>I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.</description>
 		</item>
 	</channel>
 </rss>
