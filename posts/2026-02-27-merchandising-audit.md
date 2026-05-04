@@ -1,5 +1,5 @@
 ---
-title: A merchandising audit nobody hired me to write
+title: "Borrowing expertise: a 30-property Booking.com merchandising audit"
 date: 2026-02-27
 slug: merchandising-audit
 summary: I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.
