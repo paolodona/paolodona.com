@@ -26,17 +26,55 @@
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Talking to Oracle OPERA in plain English",
-  "description": "I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially \"old-style enterprise\" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.",
-  "datePublished": "2026-05-01",
-  "author": {
-    "@type": "Person",
-    "name": "Paolo Donà",
-    "url": "https://paolodona.com/"
-  },
-  "mainEntityOfPage": "https://paolodona.com/blog/opera-mcp.html",
-  "image": "https://paolodona.com/img/paolodona.png"
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://paolodona.com/blog/opera-mcp.html#post",
+      "headline": "Talking to Oracle OPERA in plain English",
+      "description": "I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially \"old-style enterprise\" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.",
+      "datePublished": "2026-05-01",
+      "dateModified": "2026-05-01",
+      "author": {
+        "@id": "https://paolodona.com/#paolo"
+      },
+      "publisher": {
+        "@id": "https://paolodona.com/#paolo"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://paolodona.com/blog/opera-mcp.html"
+      },
+      "url": "https://paolodona.com/blog/opera-mcp.html",
+      "image": "https://paolodona.com/img/paolodona.png",
+      "inLanguage": "en",
+      "wordCount": 1212,
+      "isPartOf": {
+        "@id": "https://paolodona.com/blog.html#blog"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://paolodona.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://paolodona.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Talking to Oracle OPERA in plain English",
+          "item": "https://paolodona.com/blog/opera-mcp.html"
+        }
+      ]
+    }
+  ]
 }
 	</script>
 </head>
@@ -50,10 +88,12 @@
 			<a href="/blog.html">Blog</a>
 		</nav>
 
-		<article>
-			<h1 class="post__title">Talking to Oracle OPERA in plain English</h1>
-			<p class="post__date">1st May 2026</p>
-			<div class="post__body">
+		<article itemscope itemtype="https://schema.org/BlogPosting">
+			<meta itemprop="author" content="Paolo Don&agrave;">
+			<link itemprop="mainEntityOfPage" href="https://paolodona.com/blog/opera-mcp.html">
+			<h1 class="post__title" itemprop="headline">Talking to Oracle OPERA in plain English</h1>
+			<p class="post__date"><time datetime="2026-05-01" itemprop="datePublished">1st May 2026</time></p>
+			<div class="post__body" itemprop="articleBody">
 <p>If you have ever worked anywhere near a hotel, you know <strong>Oracle OPERA</strong>. It is the property management system that runs a huge slice of the world&#39;s hospitality industry, including all 41 of our properties at Staycity Group. It is powerful, it is comprehensive, and it is also a textbook &quot;old-style enterprise system&quot;: dense screens, deeply nested menus, two API generations layered on top of each other (the legacy OWS SOAP services and the modern OHIP REST APIs), and a learning curve that traditionally takes new analysts months to climb.</p>
 <p>I have been spending evenings and weekends building something to change that. It is called <code>opera-mcp</code>, and it is a <a href="https://modelcontextprotocol.io/">Model Context Protocol</a> server that gives any LLM — Claude, ChatGPT, our internal agents — direct, safe, natural-language access to OPERA. The result has genuinely surprised me, and the team using it.</p>
 <h2>What it actually is</h2>

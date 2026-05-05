@@ -58,18 +58,37 @@ const xmlEscape = (s) => String(s)
 
 const attrEscape = (s) => String(s).replace(/"/g, '&quot;');
 
-function postTemplate({ title, date, summary, body, slug }) {
+function postTemplate({ title, date, summary, body, slug, wordCount }) {
 	const url = `${SITE_URL}/blog/${slug}.html`;
 	const desc = attrEscape(summary || '');
 	const ld = {
 		'@context': 'https://schema.org',
-		'@type': 'BlogPosting',
-		headline: title,
-		description: summary || '',
-		datePublished: date,
-		author: { '@type': 'Person', name: SITE_AUTHOR, url: `${SITE_URL}/` },
-		mainEntityOfPage: url,
-		image: SITE_IMAGE
+		'@graph': [
+			{
+				'@type': 'BlogPosting',
+				'@id': `${url}#post`,
+				headline: title,
+				description: summary || '',
+				datePublished: date,
+				dateModified: date,
+				author: { '@id': `${SITE_URL}/#paolo` },
+				publisher: { '@id': `${SITE_URL}/#paolo` },
+				mainEntityOfPage: { '@id': url },
+				url,
+				image: SITE_IMAGE,
+				inLanguage: 'en',
+				wordCount,
+				isPartOf: { '@id': `${SITE_URL}/blog.html#blog` }
+			},
+			{
+				'@type': 'BreadcrumbList',
+				itemListElement: [
+					{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+					{ '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog.html` },
+					{ '@type': 'ListItem', position: 3, name: title, item: url }
+				]
+			}
+		]
 	};
 	return `<!DOCTYPE html>
 <html lang="en">
@@ -103,10 +122,12 @@ ${JSON.stringify(ld, null, 2)}
 <body>
 	<main class="page">${navHtml}
 
-		<article>
-			<h1 class="post__title">${title}</h1>
-			<p class="post__date">${formatHumanDate(date)}</p>
-			<div class="post__body">
+		<article itemscope itemtype="https://schema.org/BlogPosting">
+			<meta itemprop="author" content="Paolo Don&agrave;">
+			<link itemprop="mainEntityOfPage" href="${url}">
+			<h1 class="post__title" itemprop="headline">${title}</h1>
+			<p class="post__date"><time datetime="${date}" itemprop="datePublished">${formatHumanDate(date)}</time></p>
+			<div class="post__body" itemprop="articleBody">
 ${body}
 			</div>
 		</article>
@@ -127,7 +148,8 @@ const posts = files.map(file => {
 		? data.date.toISOString().slice(0, 10)
 		: String(data.date);
 	const body = marked.parse(content);
-	return { slug, title: data.title, date, summary: data.summary || '', body };
+	const wordCount = content.split(/\s+/).filter(Boolean).length;
+	return { slug, title: data.title, date, summary: data.summary || '', body, markdown: content, wordCount };
 });
 
 posts.sort((a, b) => b.date.localeCompare(a.date));
@@ -231,3 +253,39 @@ ${posts.map(p => `- [${p.title}](${SITE_URL}/blog/${p.slug}.html) (${formatHuman
 `;
 writeFileSync(join(root, 'llms.txt'), llms);
 console.log('wrote llms.txt');
+
+// llms-full.txt — full corpus for LLM ingestion
+const llmsFull = `# Paolo Donà — Full Site Corpus
+
+> Personal website of Paolo Donà (paolodona.com). This file inlines the full prose of every page and blog post in markdown for LLM ingestion. Last built ${today}.
+
+---
+
+## About (paolodona.com/)
+
+Paolo Donà — software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.
+
+Contact:
+- LinkedIn: https://www.linkedin.com/in/paolodona
+- Personal email: paolo.dona@gmail.com
+- Work email: paolo.dona@staycity.com
+
+For the canonical About / Work / Side Projects / Bookshelf page bodies, fetch the URLs in llms.txt directly — they are static HTML and require no JavaScript.
+
+---
+
+## Blog posts (full text)
+
+${posts.map(p => `### ${p.title}
+
+- URL: ${SITE_URL}/blog/${p.slug}.html
+- Published: ${formatHumanDate(p.date)} (${p.date})
+- Summary: ${p.summary}
+
+${p.markdown.trim()}
+
+---
+`).join('\n')}
+`;
+writeFileSync(join(root, 'llms-full.txt'), llmsFull);
+console.log('wrote llms-full.txt');

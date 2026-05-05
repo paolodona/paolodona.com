@@ -34,28 +34,51 @@
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Paolo Donà",
-		"givenName": "Paolo",
-		"familyName": "Donà",
-		"url": "https://paolodona.com/",
-		"image": "https://paolodona.com/img/paolodona.png",
-		"jobTitle": "Chief Information Officer",
-		"worksFor": {
-			"@type": "Organization",
-			"name": "Staycity Group",
-			"url": "https://www.staycity.com"
-		},
-		"sameAs": [
-			"https://www.linkedin.com/in/paolodona"
-		],
-		"email": "mailto:paolo.dona@gmail.com",
-		"knowsAbout": [
-			"Artificial Intelligence",
-			"Automation",
-			"Software Engineering",
-			"Technology Leadership",
-			"Digital Transformation"
+		"@graph": [
+			{
+				"@type": "Person",
+				"@id": "https://paolodona.com/#paolo",
+				"name": "Paolo Donà",
+				"givenName": "Paolo",
+				"familyName": "Donà",
+				"url": "https://paolodona.com/",
+				"image": "https://paolodona.com/img/paolodona.png",
+				"jobTitle": "Chief Information Officer",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Staycity Group",
+					"url": "https://www.staycity.com"
+				},
+				"sameAs": [
+					"https://www.linkedin.com/in/paolodona"
+				],
+				"email": "mailto:paolo.dona@gmail.com",
+				"knowsAbout": [
+					"Artificial Intelligence",
+					"Automation",
+					"Software Engineering",
+					"Technology Leadership",
+					"Digital Transformation"
+				]
+			},
+			{
+				"@type": "WebSite",
+				"@id": "https://paolodona.com/#website",
+				"url": "https://paolodona.com/",
+				"name": "Paolo Donà",
+				"description": "Personal website of Paolo Donà — CIO at Staycity Group.",
+				"publisher": { "@id": "https://paolodona.com/#paolo" },
+				"inLanguage": "en"
+			},
+			{
+				"@type": "WebPage",
+				"@id": "https://paolodona.com/#about",
+				"url": "https://paolodona.com/",
+				"name": "About — Paolo Donà",
+				"isPartOf": { "@id": "https://paolodona.com/#website" },
+				"about": { "@id": "https://paolodona.com/#paolo" },
+				"inLanguage": "en"
+			}
 		]
 	}
 	</script>

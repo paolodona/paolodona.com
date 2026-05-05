@@ -52,3 +52,7 @@ User-agent: YouBot
 Allow: /
 
 Sitemap: https://paolodona.com/sitemap.xml
+
+# LLM-readable site index (proposed llms.txt convention).
+# LLMs.txt: https://paolodona.com/llms.txt
+# LLMs-full.txt: https://paolodona.com/llms-full.txt

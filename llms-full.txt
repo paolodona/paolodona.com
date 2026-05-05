@@ -1,0 +1,217 @@
+# Paolo Donà — Full Site Corpus
+
+> Personal website of Paolo Donà (paolodona.com). This file inlines the full prose of every page and blog post in markdown for LLM ingestion. Last built 2026-05-05.
+
+---
+
+## About (paolodona.com/)
+
+Paolo Donà — software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.
+
+Contact:
+- LinkedIn: https://www.linkedin.com/in/paolodona
+- Personal email: paolo.dona@gmail.com
+- Work email: paolo.dona@staycity.com
+
+For the canonical About / Work / Side Projects / Bookshelf page bodies, fetch the URLs in llms.txt directly — they are static HTML and require no JavaScript.
+
+---
+
+## Blog posts (full text)
+
+### Talking to Oracle OPERA in plain English
+
+- URL: https://paolodona.com/blog/opera-mcp.html
+- Published: 1st May 2026 (2026-05-01)
+- Summary: I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially "old-style enterprise" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.
+
+If you have ever worked anywhere near a hotel, you know **Oracle OPERA**. It is the property management system that runs a huge slice of the world's hospitality industry, including all 41 of our properties at Staycity Group. It is powerful, it is comprehensive, and it is also a textbook "old-style enterprise system": dense screens, deeply nested menus, two API generations layered on top of each other (the legacy OWS SOAP services and the modern OHIP REST APIs), and a learning curve that traditionally takes new analysts months to climb.
+
+I have been spending evenings and weekends building something to change that. It is called `opera-mcp`, and it is a [Model Context Protocol](https://modelcontextprotocol.io/) server that gives any LLM — Claude, ChatGPT, our internal agents — direct, safe, natural-language access to OPERA. The result has genuinely surprised me, and the team using it.
+
+## What it actually is
+
+Under the hood, `opera-mcp` is a small Node.js monorepo that:
+
+- Indexes the **3,196 OHIP REST operations** across 46 modules, plus **201 OWS SOAP operations** across 12 services. That is the entire OPERA Cloud API surface, searchable.
+- Exposes a handful of MCP tools — `ohip_execute`, `ows_execute`, `route_query`, `list_operations`, `find_equivalent`, plus log-query tools — that an LLM can call directly.
+- Adds a **discovery layer** on top: synonym expansion, a 123-concept domain index, and a router that maps a fuzzy English question to the right API call ("guests arriving tomorrow" → the right OHIP reservation search with the right filters).
+- Enforces **safety by default**: read-only mode is on unless explicitly disabled, destructive operations require a two-step confirm with an expiring token, and every call is logged with a correlation ID into a local SQLite store.
+- Runs as a hosted MCP server on Azure behind Caddy, so anyone on the team can point Claude Desktop or Claude Code at it with a single API key and start asking questions.
+
+The whole thing is roughly 800 tests, several thousand lines of TypeScript, and zero hand-written API clients — the OHIP layer is fully generated from the OpenAPI specs Oracle ships.
+
+## What this looks like day-to-day
+
+The shift, once it lands in someone's workflow, is jarring in the best way. A few real examples from the last few weeks:
+
+- **"How many room nights did our employees stay across the portfolio last quarter, by property?"** Previously: pull a folio extract, dump it into Excel, manually filter on the staff rate codes, pivot. Roughly half a day of work for an analyst who knows where to look. Now: one prompt. Claude calls `route_query`, walks through reservations and folios via the MCP, and comes back with the table — and the SQL-equivalent reasoning, so we can sanity-check it.
+- **"Find every reservation for John Smith across all our hotels and tell me which ones are still active."** A cross-property profile + reservation lookup that used to require logging into each property individually. Now it is a single sentence.
+- **"What changed on confirmation 38291 in the last 24 hours, and who changed it?"** The MCP queries the OPERA audit log, dedups the noise, and explains what happened in English. The same answer used to require knowing which audit screen to open and how to read its abbreviations.
+- **"Why did this rate plan stop showing up on Booking.com last Tuesday?"** A diagnostic that used to bounce between three teams. The agent now pulls the rate availability, the channel mappings, and the recent OWS log entries, and points at the cause directly.
+- **"Build me a Python script that pulls availability for the next 90 days for IEHI0012 and writes it to a CSV."** The agent uses the MCP to discover the right operation, calls it once to confirm the shape of the response, and then writes a working script. End-to-end, a few minutes.
+
+None of these are toy examples. They are tasks that used to live on someone's to-do list for days because the person who knew the screen path was busy.
+
+## Why an LLM-shaped interface is the right one for OPERA
+
+I think the deeper lesson here is not specific to OPERA — it applies to every enterprise system of a certain age. Two things are simultaneously true:
+
+1. **The data and capabilities are extraordinary.** Decades of domain modelling, every operational nuance you can imagine, every regulatory edge case, all of it captured in the schema.
+2. **The interface is a productivity tax.** Forms designed in the early 2000s, terminology that only makes sense if you grew up in hospitality, dozens of mandatory fields where you only care about two.
+
+The traditional answer was "build a custom UI on top of the API". That works, slowly, for the ten use cases you anticipate, and not at all for the hundred you don't. An MCP server inverts the problem. Instead of pre-building screens, you give the LLM the *whole API surface* plus enough metadata to reason about it, and the user describes what they want in their own words. The "interface" gets generated on the fly, every time, fitting the question that was actually asked.
+
+The classic enterprise-software complaint — "the system can technically do that but no-one knows how" — quietly disappears.
+
+## On safety, because someone always asks
+
+OPERA is not a system you want an over-eager LLM doing creative writing on. A few non-negotiables baked in from day one:
+
+- **Read-only by default.** POST/PUT/PATCH/DELETE calls are blocked at the HTTP-client level unless the operator explicitly turns them on for a session.
+- **Two-step confirm for any write.** The MCP returns a preview with a token; the agent has to come back with the token to actually execute. No "oops, I created 400 reservations" stories.
+- **Per-session credentials and isolation.** Each connected user gets their own session context with their own hotel scope; nothing leaks between them.
+- **Full audit trail.** Every call, request, response, and correlation ID is persisted locally so we can review what the agents did.
+- **A single ring-fenced test hotel** where automated tests are allowed to do anything they want.
+
+These are not afterthoughts — they are why I am comfortable letting the team actually use this on production data.
+
+## The bigger picture
+
+I keep coming back to a thought I shared at Stripe Sessions last week: the next wave of enterprise productivity is not going to come from yet another redesigned UI. It is going to come from putting our existing systems — the ones that already encode decades of business logic — behind LLM-shaped interfaces, and letting the agents do the menial wiring that humans currently do by hand.
+
+For us at Staycity, OPERA is the first big one. F&B POS, channel manager, BI warehouse, and the rest of the stack are next. The pattern, once you have built it once, is the same: index the API surface, add a discovery layer, enforce safety at the gate, expose it as MCP, watch the team's "how do I…" questions turn into one-liners.
+
+If you operate any large enterprise system and you are wondering whether this approach makes sense for you, the honest answer is: it almost certainly does, and the building is much less work than you expect. Happy to compare notes — drop me a line.
+
+---
+
+### Speaking at Stripe Sessions 2026 in San Francisco
+
+- URL: https://paolodona.com/blog/stripe-sessions-2026.html
+- Published: 30th April 2026 (2026-04-30)
+- Summary: Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
+
+<div class="gallery">
+	<a class="gallery__hero" href="/img/blog/stripe-sessions-2026/1.jpg" data-lightbox>
+		<img src="/img/blog/stripe-sessions-2026/1.jpg" alt="Paolo on stage at Stripe Sessions 2026 — Staycity slide on the side screen">
+	</a>
+	<div class="gallery__row">
+		<a href="/img/blog/stripe-sessions-2026/2.jpg" data-lightbox>
+			<img src="/img/blog/stripe-sessions-2026/2.jpg" alt="Wide shot of the audience at Stripe Sessions 2026">
+		</a>
+		<a href="/img/blog/stripe-sessions-2026/3.jpg" data-lightbox>
+			<img src="/img/blog/stripe-sessions-2026/3.jpg" alt="Paolo presenting an architecture slide">
+		</a>
+		<a href="/img/blog/stripe-sessions-2026/4.jpg" data-lightbox>
+			<img src="/img/blog/stripe-sessions-2026/4.jpg" alt="Fireside discussion with James Lemon and Peter Hammer">
+		</a>
+	</div>
+</div>
+
+On 30 April 2026 I had the pleasure of speaking at **Stripe Sessions** in San Francisco, in a breakout titled *"Under one roof: unifying the guest experience"*, alongside [James Lemon](https://www.linkedin.com/in/james-lemon/) (Global GTM Lead, Hospitality and Travel at Stripe) and [Peter Hammer](https://www.linkedin.com/in/peterfhammer/) (Managing Director, Global Travel and Hospitality Industry Lead at Slalom).
+
+The premise of the session was simple: **guests don't think in channels**. They book online, check in at a kiosk, order room service from their phone, and expect it all to feel like one experience. Yet on the operator side that one experience is normally stitched together from a dozen different systems — each with its own payment provider, its own reconciliation quirks, and its own way of breaking on a Saturday night.
+
+I shared the blueprint we've been executing at Staycity Group to unify our multi-channel payment infrastructure across our 41 properties in 20+ cities across 8 European countries.
+
+## What I covered
+
+I started by setting the scene at Staycity six years ago: every channel — online checkout, front-desk and kiosk terminals, F&B POS, the reservations call centre — running on a different payment provider, with reconciliation that was painful at best and impossible at worst (especially for refunds), and conversion that varied wildly by market because we couldn't always offer the locally preferred payment method or currency.
+
+We picked Stripe for four reasons that compound when you're operating across eight countries: a unified architecture across online, in-person and back-office; localised checkout that lets us switch on local payment methods and currencies as we expand; global scalability with local acquiring and built-in compliance; and deep technical integration with Oracle OPERA Cloud and Tevalis, our PMS and F&B POS.
+
+The rollout was three stages. First we unified the financial infrastructure across our existing stack — online booking, the Stripe ↔ OPERA Cloud integration, and front-desk and kiosk terminals all at once, because refunds and stored cards are genuinely cross-channel. We started with a one-property POC and then deployed vertically across all 30 live properties in three months, with a single person running the rollout. Second, we turned on new payment methods market by market — Apple Pay, Google Pay, PayPal, iDEAL, Klarna, Revolut Pay and Link — and used the Stripe dashboard to A/B test where each one actually paid back. Third, and where we are now, we started layering in new revenue streams via the Stripe FX API for Multi-Currency Conversion: present prices in the guest's local currency, capture the FX margin that banks would otherwise take.
+
+The headline numbers: 17% decrease in checkout abandonment, 10% increase in authorisation rates, improved ROAS on direct bookings, and over $1M in incremental revenue from multi-currency conversion. Next up we're looking at Pay by Bank for corporate stays.
+
+The lesson I'd give anyone considering this: build the business case first. Model conversion uplift against payment-method commissions, factor in MCC and Pay-by-Bank, and don't forget efficiency gains from unified reconciliation. When you add it all up on a platform you can genuinely build on, the ROI case becomes clear very quickly.
+
+## Reflections
+
+The most rewarding part wasn't the 30 minutes on stage — it was the conversations afterwards with attendees. The level of curiosity, practical thinking, and creativity in the room really stood out. Several great exchanges on agentic commerce, on what loyalty looks like when AI agents do more of the booking, and on how to keep the physical guest experience unmistakably human as automation handles the menial bits.
+
+Big thanks to James Lemon and Peter Hammer for being such generous co-panellists, to the Stripe team for the invitation and the meticulous preparation, and to everyone who took the time to engage, challenge ideas, and share perspectives. Definitely one of the more energising rooms I've been in this year.
+
+---
+
+### Borrowing expertise: a 30-property Booking.com merchandising audit
+
+- URL: https://paolodona.com/blog/merchandising-audit.html
+- Published: 27th February 2026 (2026-02-27)
+- Summary: I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.
+
+I am not a revenue manager. I am not a copywriter. I have never sat in a Booking.com extranet for a living, and the last time I read a paper on choice architecture I was probably procrastinating on something else. And yet, over a long weekend, I produced a 30-property merchandising audit of our entire Booking.com estate that reads like it came from a specialist agency — with a pricing-psychology rationale for every recommendation, a behavioural-economics gloss on rate plan structure, and a hotel-by-hotel comparison against the actual competitive set Booking.com puts us against.
+
+I want to talk about *how* that happened, because I think it is the most important pattern I have seen in my career. It is not that I am cleverer than I was a year ago. It is that, for a smart and curious engineer, **domain knowledge is no longer the moat**. Claude Code, used well, will happily borrow expertise it does not have and apply it to data you supply, faster and more rigorously than most humans would. The bottleneck moves from "do I know this field?" to "do I know how to ask, and do I have the curiosity to keep pulling threads?"
+
+## What I actually built
+
+The thing that exists at the end of the weekend is a self-contained static website you can hand to a non-technical executive. For each of our roughly 30 Staycity and Wilde properties on Booking.com, it shows:
+
+- A side-by-side visual comparison of our listing against every hotel in our Booking.com peer-comp set, full-page screenshots of the actual listings as they render today
+- A scorecard across ten merchandising dimensions (photo sequence, pricing psychology, segment targeting, rate plan architecture, cancellation-policy framing, and so on)
+- A prioritised recommendation list — Quick Wins, Strategic Priorities, Low-Hanging Fruit, Consider Later — with each item carrying an *Impact × Effort* tag, the specific extranet lever to pull, the time it takes, and the psychological rationale
+- An estate-level executive narrative that pulls the cross-property themes together
+
+<a class="gallery__hero" href="/img/blog/merchandising-audit/compare.png" data-lightbox>
+	<img src="/img/blog/merchandising-audit/compare.png" alt="Estate audit Compare view: Wilde Aparthotels London Paddington side-by-side with Novotel London Paddington, showing both Booking.com listings and a column of recommendation tags">
+</a>
+
+Under the hood it is a pipeline of specialised Claude Code agents I designed for the job:
+
+- **`hotel-copy-analyst`** — reads descriptions across our hotel and its competitors and scores them on emotional tone, specificity, differentiator clarity, CTA effectiveness, amenity legibility and segment coverage. Knows the 1,000-character Booking.com limit.
+- **`hotel-pricing-psychologist`** — applies a twelve-dimension behavioural-economics framework: anchoring, decoy pricing, struck-through prices, the contrast effect, payment coupling, choice overload, the compromise effect. It looks at our rate ladder *as a guest would experience it on the page*, not as a spreadsheet.
+- **`hotel-image-analyst`** — multimodal, walks through every photo in the gallery, scores composition and emotional cues, judges the sequence as a narrative, identifies missing shots, recommends a new hero.
+- **`hotel-cancellation-analyst`** — looks specifically at cancellation policy framing, the delta between refundable and non-refundable rates, and the commitment architecture that follows from it.
+- **`hotel-benchmarker`** — synthesises the four specialists into cross-property scorecards and gap analysis.
+- **`hotel-recommendation-engine`** — produces the final prioritised, lever-mapped action plan.
+- **`booking-extranet-expert`** — annotates every recommendation with whether it is actually feasible to execute through the Booking.com extranet, and how long it takes.
+
+That last agent matters more than it sounds. The whole audit is worthless if half the recommendations cannot be implemented in the tool the team actually uses on a Monday morning.
+
+## The kind of recommendation it produces
+
+Here is the texture, taken from the audit of Wilde Paddington — at the time of writing, the worst-performing listing in its peer-comp set, ranked dead last on merchandising effectiveness despite holding an 8.7 review score and being the only true apartment product in a field of standard hotel rooms. *(All the specific examples below were true on the day the audit ran. Our team moved fast on the Quick Wins and Strategic Priorities and most of these particular gaps have since been closed; I am leaving the original numbers in because the point of this post is the texture of the analysis, not the live state of any one listing.)*
+
+<a class="gallery__hero" href="/img/blog/merchandising-audit/recommendations.png" data-lightbox>
+	<img src="/img/blog/merchandising-audit/recommendations.png" alt="Estate audit Recommendations view: filterable table of 529 recommendations across 35 hotels, filtered to 17 recommendations for Wilde Aparthotels London Paddington with category, lever, impact and effort columns">
+</a>
+
+**On images** — the hero photo on the listing was an upward-angled shot of the building exterior; the agent flagged it as the weakest image in the carousel and recommended swapping in a one-bedroom apartment interior showing living area, bedroom and city view. It also noticed the kitchenette — the one feature no competitor in the Paddington set could offer — was buried at gallery position 20, invisible to mobile browsers who only see the carousel. The fix: drag it to position 3. Total time in the extranet: five minutes. Estimated impact: largest single zero-cost lever available.
+
+**On the gap between refundable and non-refundable rates** — Wilde Paddington had *zero* non-refundable rates across six of its seven room types. Its entry price on a Booking.com search page therefore competed against Hilton Paddington at £366 NR, Novotel at £328 NR and voco at £237 NR — making Wilde appear 25–75% more expensive than it needed to be despite a better product and better reviews. The recommended fix: an "Advance Saver" non-refundable rate plan priced 10% below the current flex rate. For the base Studio that is £373 NR vs £414 flex. Two follow-on effects: the £41 gap reframes the flex rate as a small "insurance policy" for cancellation flexibility (the contrast effect), and non-refundable bookings carry sunk cost which reduces cancellation rate by an estimated 3–5 percentage points.
+
+**On rate architecture** — the agent noticed Wilde was the only hotel in the entire 11-property set without breakfast-included rates, while every competitor offered a bundle. The remediation is not just "add breakfast"; it is to create a parallel set of rates so each room shows four rate plans rather than two, doubling the apparent depth of the offer and triggering the consideration-set psychology that makes a property feel established and confident.
+
+**On choice architecture** — seven room types with overlapping names ("Studio", "Wilde Studio", "Wilde Studio Superior", "Superior Studio", two of those priced identically at £455 despite different square footage) created choice overload. The recommendation is a clean 4-tier ladder with a deliberate "compromise effect" middle option that the pricing structure quietly steers guests toward.
+
+I want to be honest: I could not have written any of those paragraphs from scratch a year ago. I know what an aparthotel is. I know what Booking.com looks like. But the language of struck-through prices and compromise effects and decoy pricing and payment coupling is not mine. Or rather, it was not mine — until I sat down with an LLM that *had* read every relevant paper, and I had enough engineering instinct to give it the right data, the right structure, and the right adversarial reviewer to keep it honest.
+
+## Why "smart engineer plus LLM" is the new shape
+
+I keep returning to the same thought. For most of my career, the way you scaled into a new domain was either to hire someone who already knew it, or to spend weeks reading until you knew enough to be dangerous. Both of those routes still exist. Both of them are now optional for a large class of problems.
+
+A smart, curious engineer with Claude Code can:
+
+- Decompose a fuzzy business question into specialist sub-problems (here: copy, pricing, images, cancellation, benchmarking, synthesis)
+- Spin up a *named* expert for each sub-problem, with a tight prompt that forces it to cite a specific framework rather than wave its hands
+- Wire those experts together into a pipeline with validation gates between phases — so if the pricing expert produces output the benchmarker cannot parse, the pipeline halts loudly rather than quietly degrading
+- Apply that pipeline to *real data*, scraped from the actual surfaces customers see, rather than a sanitised abstract version
+
+The output is not "what an LLM thinks about Booking.com listings in general". It is "what these eleven specific listings, with these specific photos and these specific rate ladders, look like when you grade them against the literature on choice architecture and the actual contents of the Booking.com extranet". That is something else entirely.
+
+The gating skill is not domain knowledge. It is engineering taste — knowing how to slice a problem, where to put a validation step, when to insist on a counter-example, how to tell when an agent is bullshitting and how to make it stop.
+
+## What this means for the rest of us
+
+There is an objection I hear constantly: *but the LLM does not really understand pricing psychology, it is just pattern-matching.* I think that is the wrong question. The right question is whether the recommendations it produces are correct, defensible and implementable on a Tuesday morning. In our case, every recommendation in the audit comes with a specific extranet lever, an estimated time-to-execute, a behavioural rationale, and an impact range — and our internal experts, when they review it, push back on roughly one item in fifteen. That is a far better hit rate than I get on most internal documents.
+
+Which puts me in an awkward and energising position. The work that used to require a small specialist agency, six weeks and a five-figure invoice, I produced on a long weekend. Not because I am special. Because I was curious enough to push, and I had the tools to let the curiosity actually compound into output. The marginal cost of running it again next quarter, for a different segment, on a different OTA, is essentially zero.
+
+If you are an engineer reading this and you have been holding back from a domain because "I don't know enough about it yet" — try the experiment. Pick the domain. Pick a real dataset. Pick the most expert-sounding question you can think of. Spend an afternoon decomposing it into specialists, give each specialist the data it needs, and force them to produce concrete, actionable, citable output. Then read what comes back.
+
+I think you will find, as I did, that the moat you were respecting is mostly drawn on the map.
+
+---
+

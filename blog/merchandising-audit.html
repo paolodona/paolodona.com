@@ -26,17 +26,55 @@
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Borrowing expertise: a 30-property Booking.com merchandising audit",
-  "description": "I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.",
-  "datePublished": "2026-02-27",
-  "author": {
-    "@type": "Person",
-    "name": "Paolo Donà",
-    "url": "https://paolodona.com/"
-  },
-  "mainEntityOfPage": "https://paolodona.com/blog/merchandising-audit.html",
-  "image": "https://paolodona.com/img/paolodona.png"
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://paolodona.com/blog/merchandising-audit.html#post",
+      "headline": "Borrowing expertise: a 30-property Booking.com merchandising audit",
+      "description": "I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.",
+      "datePublished": "2026-02-27",
+      "dateModified": "2026-02-27",
+      "author": {
+        "@id": "https://paolodona.com/#paolo"
+      },
+      "publisher": {
+        "@id": "https://paolodona.com/#paolo"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://paolodona.com/blog/merchandising-audit.html"
+      },
+      "url": "https://paolodona.com/blog/merchandising-audit.html",
+      "image": "https://paolodona.com/img/paolodona.png",
+      "inLanguage": "en",
+      "wordCount": 1733,
+      "isPartOf": {
+        "@id": "https://paolodona.com/blog.html#blog"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://paolodona.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://paolodona.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Borrowing expertise: a 30-property Booking.com merchandising audit",
+          "item": "https://paolodona.com/blog/merchandising-audit.html"
+        }
+      ]
+    }
+  ]
 }
 	</script>
 </head>
@@ -50,10 +88,12 @@
 			<a href="/blog.html">Blog</a>
 		</nav>
 
-		<article>
-			<h1 class="post__title">Borrowing expertise: a 30-property Booking.com merchandising audit</h1>
-			<p class="post__date">27th February 2026</p>
-			<div class="post__body">
+		<article itemscope itemtype="https://schema.org/BlogPosting">
+			<meta itemprop="author" content="Paolo Don&agrave;">
+			<link itemprop="mainEntityOfPage" href="https://paolodona.com/blog/merchandising-audit.html">
+			<h1 class="post__title" itemprop="headline">Borrowing expertise: a 30-property Booking.com merchandising audit</h1>
+			<p class="post__date"><time datetime="2026-02-27" itemprop="datePublished">27th February 2026</time></p>
+			<div class="post__body" itemprop="articleBody">
 <p>I am not a revenue manager. I am not a copywriter. I have never sat in a Booking.com extranet for a living, and the last time I read a paper on choice architecture I was probably procrastinating on something else. And yet, over a long weekend, I produced a 30-property merchandising audit of our entire Booking.com estate that reads like it came from a specialist agency — with a pricing-psychology rationale for every recommendation, a behavioural-economics gloss on rate plan structure, and a hotel-by-hotel comparison against the actual competitive set Booking.com puts us against.</p>
 <p>I want to talk about <em>how</em> that happened, because I think it is the most important pattern I have seen in my career. It is not that I am cleverer than I was a year ago. It is that, for a smart and curious engineer, <strong>domain knowledge is no longer the moat</strong>. Claude Code, used well, will happily borrow expertise it does not have and apply it to data you supply, faster and more rigorously than most humans would. The bottleneck moves from &quot;do I know this field?&quot; to &quot;do I know how to ask, and do I have the curiosity to keep pulling threads?&quot;</p>
 <h2>What I actually built</h2>
