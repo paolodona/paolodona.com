@@ -2,29 +2,36 @@
 
 > Software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.
 
-Personal website of Paolo Donà (paolodona.com). Static HTML — all content is in the page bodies, no JavaScript required to read it.
+Personal website of Paolo Donà (https://paolodona.com). The site is static HTML, with Markdown mirrors and a structured JSON corpus for AI agents. Canonical structured data uses Schema.org JSON-LD and references Paolo as https://paolodona.com/#paolo.
 
-## Pages
+## Core Pages
 
-- [About](https://paolodona.com/): Bio, current role, interests, and how to get in touch.
-- [Work](https://paolodona.com/work.html): Career history — Staycity Group, Homestay.com, NiftySchool / 4niches, Mobile Interactive Group, and earlier roles.
-- [Side Projects](https://paolodona.com/side-projects.html): Whatevernote (a fast distributed offline-first note app), the Este Bike cycling-club website, and other experiments.
-- [Bookshelf](https://paolodona.com/bookshelf.html): Books currently being read or recently enjoyed.
-- [Blog](https://paolodona.com/blog.html): Notes and writing.
+- [About](https://paolodona.com/index.html.md): Bio, current role, interests, and contact links.
+- [Work](https://paolodona.com/work.html.md): Career history across software engineering, startups, and C-level technology leadership.
+- [Side Projects](https://paolodona.com/side-projects.html.md): Whatevernote, Este Bike, and other projects built outside the day job.
+- [Bookshelf](https://paolodona.com/bookshelf.html.md): Books Paolo Donà is reading or has read and enjoyed.
+- [Blog](https://paolodona.com/blog.html.md): Notes and writing on technology, leadership, AI, and life.
 
-## Blog posts
+## Structured Data
 
-- [Talking to Oracle OPERA in plain English](https://paolodona.com/blog/opera-mcp.html) (1st May 2026) — I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially "old-style enterprise" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.
-- [Speaking at Stripe Sessions 2026 in San Francisco](https://paolodona.com/blog/stripe-sessions-2026.html) (30th April 2026) — Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
-- [Borrowing expertise: a 30-property Booking.com merchandising audit](https://paolodona.com/blog/merchandising-audit.html) (27th February 2026) — I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.
+- [Machine-readable site corpus](https://paolodona.com/site.json): Profile, work history, education, side projects, books, posts, feeds, and canonical URLs as JSON.
+- [Full LLM corpus](https://paolodona.com/llms-full.txt): Full Markdown text of the public site and blog posts.
+- [Sitemap](https://paolodona.com/sitemap.xml): XML sitemap for crawl discovery.
+- [RSS feed](https://paolodona.com/feed.xml): Blog feed.
+
+## Blog Posts
+
+- [Talking to Oracle OPERA in plain English](https://paolodona.com/blog/opera-mcp.html.md): 1st May 2026. I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially "old-style enterprise" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.
+- [Speaking at Stripe Sessions 2026 in San Francisco](https://paolodona.com/blog/stripe-sessions-2026.html.md): 30th April 2026. Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
+- [Borrowing expertise: a 30-property Booking.com merchandising audit](https://paolodona.com/blog/merchandising-audit.html.md): 27th February 2026. I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.
 
 ## Contact
 
 - LinkedIn: https://www.linkedin.com/in/paolodona
-- Email: paolo.dona@gmail.com
 - Work email: paolo.dona@staycity.com
+- Personal email: paolo.dona@gmail.com
 
-## Feeds
+## Optional
 
-- RSS: https://paolodona.com/feed.xml
-- Sitemap: https://paolodona.com/sitemap.xml
+- [Human-readable home page](https://paolodona.com/): Canonical visual home page.
+- [Human-readable blog index](https://paolodona.com/blog.html): Browser-oriented blog index.

@@ -2,7 +2,9 @@
 User-agent: *
 Allow: /
 
-# Explicitly welcome major LLM / AI crawlers.
+# Explicitly welcome major LLM / AI crawlers and user-triggered fetchers.
+# robots.txt expresses access preferences; llms.txt and site.json describe
+# the public content in formats that AI systems can ingest directly.
 User-agent: GPTBot
 Allow: /
 
@@ -12,7 +14,16 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-AdsBot
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: anthropic-ai
@@ -28,6 +39,15 @@ User-agent: Perplexity-User
 Allow: /
 
 User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
 Allow: /
 
 User-agent: Applebot-Extended
@@ -56,3 +76,4 @@ Sitemap: https://paolodona.com/sitemap.xml
 # LLM-readable site index (proposed llms.txt convention).
 # LLMs.txt: https://paolodona.com/llms.txt
 # LLMs-full.txt: https://paolodona.com/llms-full.txt
+# Structured corpus: https://paolodona.com/site.json

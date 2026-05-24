@@ -19,6 +19,7 @@
 	<meta name="twitter:image" content="https://paolodona.com/img/paolodona.png">
 	<link rel="shortcut icon" href="/img/paolodona.png">
 	<link rel="alternate" type="application/rss+xml" title="Paolo Don&agrave; — Blog" href="/feed.xml">
+	<link rel="alternate" type="text/markdown" title="Blog — Markdown" href="/blog.html.md">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/custom.css">
 	<script type="application/ld+json">
@@ -33,7 +34,34 @@
 				"description": "Notes and writing by Paolo Donà on technology, leadership, AI and life.",
 				"author": { "@id": "https://paolodona.com/#paolo" },
 				"publisher": { "@id": "https://paolodona.com/#paolo" },
+				"isPartOf": { "@id": "https://paolodona.com/#website" },
 				"inLanguage": "en"
+			},
+			{
+				"@type": "ItemList",
+				"@id": "https://paolodona.com/blog.html#posts",
+				"name": "Blog posts",
+				"isPartOf": { "@id": "https://paolodona.com/blog.html#blog" },
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"url": "https://paolodona.com/blog/opera-mcp.html",
+						"name": "Talking to Oracle OPERA in plain English"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"url": "https://paolodona.com/blog/stripe-sessions-2026.html",
+						"name": "Speaking at Stripe Sessions 2026 in San Francisco"
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"url": "https://paolodona.com/blog/merchandising-audit.html",
+						"name": "Borrowing expertise: a 30-property Booking.com merchandising audit"
+					}
+				]
 			},
 			{
 				"@type": "BreadcrumbList",

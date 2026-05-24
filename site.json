@@ -1,0 +1,394 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://paolodona.com/#website",
+  "name": "Paolo Donà",
+  "url": "https://paolodona.com",
+  "description": "Software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.",
+  "inLanguage": "en",
+  "publisher": {
+    "@id": "https://paolodona.com/#paolo"
+  },
+  "dateModified": "2026-05-22",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://paolodona.com/#paolo",
+    "name": "Paolo Donà",
+    "givenName": "Paolo",
+    "familyName": "Donà",
+    "url": "https://paolodona.com/",
+    "image": "https://paolodona.com/img/paolodona.png",
+    "jobTitle": "Chief Information Officer",
+    "worksFor": {
+      "name": "Staycity Group",
+      "url": "https://www.staycity.com",
+      "description": "Europe's leading aparthotel operator"
+    },
+    "description": "Software engineer and startup entrepreneur turned technologist and C-level executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator.",
+    "summary": "Software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.",
+    "contacts": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/paolodona"
+      },
+      {
+        "label": "Work email",
+        "url": "mailto:paolo.dona@staycity.com",
+        "value": "paolo.dona@staycity.com"
+      },
+      {
+        "label": "Personal email",
+        "url": "mailto:paolo.dona@gmail.com",
+        "value": "paolo.dona@gmail.com"
+      }
+    ],
+    "locations": [
+      "Dublin, Ireland",
+      "Northern Italy"
+    ],
+    "interests": [
+      "Artificial Intelligence",
+      "Automation",
+      "Software Engineering",
+      "Technology Leadership",
+      "Digital Transformation",
+      "Cycling"
+    ],
+    "about": [
+      "I am the Chief Information Officer at Staycity Group, Europe's leading aparthotel operator, where I lead technology strategy and digital transformation across our European portfolio. In my career I've built, led, and learned from technology teams across software engineering, entrepreneurship, and executive leadership.",
+      "I'm especially energised by AI and automation right now: how they reshape what a small team can ship, and how to apply them pragmatically to real business problems rather than as a fashion. My happy place is creating and leading small, fast-paced, world-class technical teams.",
+      "My background blends deep technical expertise with commercial acumen. I'm as comfortable in the boardroom of a €500M-a-year company as I am in detailed technical discussions with engineers.",
+      "Outside of work I'm a keen cyclist across road, gravel, and MTB, and I divide my time between Ireland and Northern Italy."
+    ],
+    "email": [
+      "paolo.dona@staycity.com",
+      "paolo.dona@gmail.com"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/paolodona"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Automation",
+      "Software Engineering",
+      "Technology Leadership",
+      "Digital Transformation",
+      "Cycling"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Chief Information Officer",
+      "occupationLocation": {
+        "@type": "Country",
+        "name": "Ireland"
+      }
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "University of Padua"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Istituto Tecnico Industriale, Belluno"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "name": "About",
+      "url": "https://paolodona.com/",
+      "markdownUrl": "https://paolodona.com/index.html.md",
+      "description": "Bio, current role, interests, and contact links."
+    },
+    {
+      "name": "Work",
+      "url": "https://paolodona.com/work.html",
+      "markdownUrl": "https://paolodona.com/work.html.md",
+      "description": "Career history across software engineering, startups, and C-level technology leadership."
+    },
+    {
+      "name": "Side Projects",
+      "url": "https://paolodona.com/side-projects.html",
+      "markdownUrl": "https://paolodona.com/side-projects.html.md",
+      "description": "Whatevernote, Este Bike, and other projects built outside the day job."
+    },
+    {
+      "name": "Bookshelf",
+      "url": "https://paolodona.com/bookshelf.html",
+      "markdownUrl": "https://paolodona.com/bookshelf.html.md",
+      "description": "Books Paolo Donà is reading or has read and enjoyed."
+    },
+    {
+      "name": "Blog",
+      "url": "https://paolodona.com/blog.html",
+      "markdownUrl": "https://paolodona.com/blog.html.md",
+      "description": "Notes and writing on technology, leadership, AI, and life."
+    }
+  ],
+  "workHistory": [
+    {
+      "organization": "Staycity Group",
+      "url": "https://www.staycity.com",
+      "roles": [
+        {
+          "title": "Chief Information Officer",
+          "startDate": "2019-07",
+          "endDate": "present"
+        }
+      ],
+      "summary": "Responsible for technology vision and strategy across the group, and for the full technology stack: IT, web and mobile apps, data warehouse and BI, security, AI, third-party development, and the IT team, vendors and system integrators."
+    },
+    {
+      "organization": "Homestay.com",
+      "url": "https://www.homestay.com",
+      "roles": [
+        {
+          "title": "Managing Director",
+          "startDate": "2017-06",
+          "endDate": "2019-06"
+        },
+        {
+          "title": "CTO & Director",
+          "startDate": "2012-01",
+          "endDate": "2017-05"
+        }
+      ],
+      "summary": "Co-founded the global homestay marketplace after NiftySchool was acquired by Irish investors. Built the product, engineering, data, and multi-currency payments infrastructure from day one, grew the team to around 30, then stepped up as Managing Director to restructure the company and lead it to break-even."
+    },
+    {
+      "organization": "NiftySchool.com",
+      "roles": [
+        {
+          "title": "Founder, Director & CTO",
+          "startDate": "2009-05",
+          "endDate": "2012-05"
+        }
+      ],
+      "summary": "Founded and ran a SaaS platform for language schools. Grew it from a London pilot to 100+ schools across three continents; acquired by Homestay Technologies in May 2012."
+    },
+    {
+      "organization": "Mobile Interactive Group",
+      "roles": [
+        {
+          "title": "Product Manager",
+          "startDate": "2009-06",
+          "endDate": "2011-06"
+        },
+        {
+          "title": "Lead Developer",
+          "startDate": "2008-07",
+          "endDate": "2009-06"
+        }
+      ],
+      "summary": "Joined as a senior Ruby on Rails developer on large-scale mobile platforms, then moved into product to define and run SMS content distribution and multi-channel marketing platforms used by O2, Vodafone, Three, Sky, Virgin Media and ITV."
+    },
+    {
+      "organization": "SeeSaw srl",
+      "location": "Verona, Italy",
+      "roles": [
+        {
+          "title": "Founder & Lead Developer",
+          "startDate": "2006-09",
+          "endDate": "2008-09"
+        }
+      ],
+      "summary": "Co-founded and ran a boutique software consultancy serving small and medium-sized customers across Italy, including work for impresa.gov.it and Q8 Petroleum. Also ran the first commercial Ruby on Rails courses in Italy."
+    },
+    {
+      "organization": "Earlier roles",
+      "roles": [
+        {
+          "title": "Software developer / analyst",
+          "startDate": "2000",
+          "endDate": "2006"
+        }
+      ],
+      "summary": "Software developer and analyst roles at Archeometra and Supernet S.p.A., working across Java/J2EE, Liferay portals, and Ruby on Rails."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Padua",
+      "credential": "Master's degree in Computer Engineering",
+      "year": "2000"
+    },
+    {
+      "institution": "Istituto Tecnico Industriale, Belluno",
+      "credential": "Technical diploma in Electronics and Telecommunications",
+      "year": "1996"
+    }
+  ],
+  "sideProjects": [
+    {
+      "name": "Este Bike Website",
+      "url": "https://www.estebike.it",
+      "summary": "Local cycling club website for Este Bike in Este, Italy, the home base for road, gravel and MTB rides in the Veneto."
+    },
+    {
+      "name": "Whatevernote",
+      "url": "https://www.whatevernote.com",
+      "summary": "A lightning-fast, distributed, offline-first note-taking app."
+    }
+  ],
+  "books": [
+    {
+      "title": "Scaling People",
+      "author": "Claire Hughes Johnson",
+      "url": "https://press.stripe.com/scaling-people",
+      "image": "https://paolodona.com/img/books/scaling-people.jpg"
+    },
+    {
+      "title": "Slow Productivity",
+      "author": "Cal Newport",
+      "url": "https://www.amazon.co.uk/Slow-Productivity-Accomplishment-Without-Burnout/dp/024165291X",
+      "image": "https://paolodona.com/img/books/slow-productivity.jpg"
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "author": "Oliver Burkeman",
+      "url": "https://www.amazon.co.uk/Four-Thousand-Weeks-Embrace-thousand/dp/1784704008",
+      "image": "https://paolodona.com/img/books/four-thousand-weeks.jpg"
+    },
+    {
+      "title": "Indistractable",
+      "author": "Nir Eyal",
+      "url": "https://www.amazon.co.uk/Indistractable-Control-Your-Attention-Choose/dp/1526610205",
+      "image": "https://paolodona.com/img/books/indistractable.jpg"
+    },
+    {
+      "title": "Building a Second Brain",
+      "author": "Tiago Forte",
+      "url": "https://www.amazon.co.uk/s?k=Building+a+Second+Brain+Tiago+Forte",
+      "image": "https://paolodona.com/img/books/building-a-second-brain.jpg"
+    },
+    {
+      "title": "Essentialism",
+      "author": "Greg McKeown",
+      "url": "https://www.amazon.co.uk/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0753555166",
+      "image": "https://paolodona.com/img/books/essentialism.jpg"
+    },
+    {
+      "title": "Priceless",
+      "author": "William Poundstone",
+      "url": "https://www.amazon.co.uk/Priceless-Hidden-Psychology-William-Poundstone/dp/1851688293",
+      "image": "https://paolodona.com/img/books/priceless.jpg"
+    },
+    {
+      "title": "High Growth Handbook",
+      "author": "Elad Gil",
+      "url": "https://press.stripe.com/high-growth-handbook",
+      "image": "https://paolodona.com/img/books/high-growth-handbook.jpg"
+    },
+    {
+      "title": "Principles",
+      "author": "Ray Dalio",
+      "url": "https://www.principles.com/",
+      "image": "https://paolodona.com/img/books/principles.jpg"
+    },
+    {
+      "title": "Principles for Dealing with the Changing World Order",
+      "author": "Ray Dalio",
+      "url": "https://www.principles.com/",
+      "image": "https://paolodona.com/img/books/changing-world-order.jpg"
+    },
+    {
+      "title": "How to Avoid a Climate Disaster",
+      "author": "Bill Gates",
+      "url": "https://www.gatesnotes.com/How-to-Avoid-a-Climate-Disaster-announcement",
+      "image": "https://paolodona.com/img/books/how-to-avoid-a-climate-disaster.jpg"
+    },
+    {
+      "title": "Permanent Record",
+      "author": "Edward Snowden",
+      "url": "https://www.amazon.co.uk/Permanent-Record-Edward-Snowden/dp/1529035694",
+      "image": "https://paolodona.com/img/books/permanent-record.jpg"
+    },
+    {
+      "title": "Freakonomics",
+      "author": "Steven D. Levitt & Stephen J. Dubner",
+      "url": "https://www.amazon.co.uk/Freakonomics-Rogue-Economist-Explores-Everything/dp/0141030089",
+      "image": "https://paolodona.com/img/books/freakonomics.jpg"
+    },
+    {
+      "title": "The Coming Wave",
+      "author": "Mustafa Suleyman",
+      "url": "https://the-coming-wave.com/",
+      "image": "https://paolodona.com/img/books/the-coming-wave.jpg"
+    },
+    {
+      "title": "Digital Minimalism",
+      "author": "Cal Newport",
+      "url": "https://www.amazon.co.uk/Digital-Minimalism-Choosing-Focused-Noisy/dp/0241341132",
+      "image": "https://paolodona.com/img/books/digital-minimalism.jpg"
+    },
+    {
+      "title": "It Doesn't Have to Be Crazy at Work",
+      "author": "Jason Fried & David Heinemeier Hansson",
+      "url": "https://basecamp.com/books",
+      "image": "https://paolodona.com/img/books/it-doesnt-have-to-be-crazy-at-work.jpg"
+    },
+    {
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "url": "https://www.amazon.co.uk/Deep-Work-Focused-Success-Distracted/dp/0349411905",
+      "image": "https://paolodona.com/img/books/deep-work.jpg"
+    },
+    {
+      "title": "Evil Plans",
+      "author": "Hugh MacLeod",
+      "url": "https://www.amazon.co.uk/Evil-Plans-Having-Road-Domination/dp/1591843847",
+      "image": "https://paolodona.com/img/books/evil-plans.jpg"
+    },
+    {
+      "title": "Profit First",
+      "author": "Mike Michalowicz",
+      "url": "https://www.amazon.co.uk/Profit-First-Transform-Cash-Eating-Money-Making/dp/073521414X",
+      "image": "https://paolodona.com/img/books/profit-first.jpg"
+    },
+    {
+      "title": "Berkshire Hathaway: Letters to Shareholders 1965-2024",
+      "author": "Warren E. Buffett",
+      "url": "https://www.berkshirehathaway.com/letters/letters.html",
+      "image": "https://paolodona.com/img/books/berkshire-hathaway-letters.jpg"
+    },
+    {
+      "title": "Fooled by Randomness",
+      "author": "Nassim Nicholas Taleb",
+      "url": "https://www.fooledbyrandomness.com/",
+      "image": "https://paolodona.com/img/books/fooled-by-randomness.jpg"
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "Talking to Oracle OPERA in plain English",
+      "url": "https://paolodona.com/blog/opera-mcp.html",
+      "markdownUrl": "https://paolodona.com/blog/opera-mcp.html.md",
+      "datePublished": "2026-05-01",
+      "summary": "I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially \"old-style enterprise\" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.",
+      "wordCount": 1212
+    },
+    {
+      "title": "Speaking at Stripe Sessions 2026 in San Francisco",
+      "url": "https://paolodona.com/blog/stripe-sessions-2026.html",
+      "markdownUrl": "https://paolodona.com/blog/stripe-sessions-2026.html.md",
+      "datePublished": "2026-04-30",
+      "summary": "Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.",
+      "wordCount": 697
+    },
+    {
+      "title": "Borrowing expertise: a 30-property Booking.com merchandising audit",
+      "url": "https://paolodona.com/blog/merchandising-audit.html",
+      "markdownUrl": "https://paolodona.com/blog/merchandising-audit.html.md",
+      "datePublished": "2026-02-27",
+      "summary": "I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.",
+      "wordCount": 1733
+    }
+  ],
+  "feeds": {
+    "rss": "https://paolodona.com/feed.xml",
+    "sitemap": "https://paolodona.com/sitemap.xml",
+    "llms": "https://paolodona.com/llms.txt",
+    "llmsFull": "https://paolodona.com/llms-full.txt"
+  }
+}

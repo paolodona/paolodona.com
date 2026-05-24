@@ -1,27 +1,166 @@
 # Paolo Donà — Full Site Corpus
 
-> Personal website of Paolo Donà (paolodona.com). This file inlines the full prose of every page and blog post in markdown for LLM ingestion. Last built 2026-05-05.
+> Personal website of Paolo Donà (https://paolodona.com). This file inlines the full public prose of the static pages and blog posts in Markdown for LLM ingestion. Last built 2026-05-22.
 
 ---
 
-## About (paolodona.com/)
+## About
 
-Paolo Donà — software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.
+- URL: https://paolodona.com/
+- Markdown: https://paolodona.com/index.html.md
 
-Contact:
+# Paolo Donà
+
+Software engineer turned executive. Chief Information Officer at Staycity Group, Europe's leading aparthotel operator. Keenly interested in AI, automation, and building small, fast-paced, world-class technical teams.
+
+I am the Chief Information Officer at Staycity Group, Europe's leading aparthotel operator, where I lead technology strategy and digital transformation across our European portfolio. In my career I've built, led, and learned from technology teams across software engineering, entrepreneurship, and executive leadership.
+
+I'm especially energised by AI and automation right now: how they reshape what a small team can ship, and how to apply them pragmatically to real business problems rather than as a fashion. My happy place is creating and leading small, fast-paced, world-class technical teams.
+
+My background blends deep technical expertise with commercial acumen. I'm as comfortable in the boardroom of a €500M-a-year company as I am in detailed technical discussions with engineers.
+
+Outside of work I'm a keen cyclist across road, gravel, and MTB, and I divide my time between Ireland and Northern Italy.
+
+## Contact
+
 - LinkedIn: https://www.linkedin.com/in/paolodona
-- Personal email: paolo.dona@gmail.com
 - Work email: paolo.dona@staycity.com
-
-For the canonical About / Work / Side Projects / Bookshelf page bodies, fetch the URLs in llms.txt directly — they are static HTML and require no JavaScript.
+- Personal email: paolo.dona@gmail.com
 
 ---
 
-## Blog posts (full text)
+## Work
+
+- URL: https://paolodona.com/work.html
+- Markdown: https://paolodona.com/work.html.md
+
+# Work
+
+A short history of the companies and roles Paolo Donà has been part of.
+
+## Staycity Group
+
+- Chief Information Officer: 2019-07 to present
+- URL: https://www.staycity.com
+
+Responsible for technology vision and strategy across the group, and for the full technology stack: IT, web and mobile apps, data warehouse and BI, security, AI, third-party development, and the IT team, vendors and system integrators.
+
+## Homestay.com
+
+- Managing Director: 2017-06 to 2019-06
+- CTO & Director: 2012-01 to 2017-05
+- URL: https://www.homestay.com
+
+Co-founded the global homestay marketplace after NiftySchool was acquired by Irish investors. Built the product, engineering, data, and multi-currency payments infrastructure from day one, grew the team to around 30, then stepped up as Managing Director to restructure the company and lead it to break-even.
+
+## NiftySchool.com
+
+- Founder, Director & CTO: 2009-05 to 2012-05
+
+Founded and ran a SaaS platform for language schools. Grew it from a London pilot to 100+ schools across three continents; acquired by Homestay Technologies in May 2012.
+
+## Mobile Interactive Group
+
+- Product Manager: 2009-06 to 2011-06
+- Lead Developer: 2008-07 to 2009-06
+
+Joined as a senior Ruby on Rails developer on large-scale mobile platforms, then moved into product to define and run SMS content distribution and multi-channel marketing platforms used by O2, Vodafone, Three, Sky, Virgin Media and ITV.
+
+## SeeSaw srl
+
+- Founder & Lead Developer: 2006-09 to 2008-09
+- Location: Verona, Italy
+
+Co-founded and ran a boutique software consultancy serving small and medium-sized customers across Italy, including work for impresa.gov.it and Q8 Petroleum. Also ran the first commercial Ruby on Rails courses in Italy.
+
+## Earlier roles
+
+- Software developer / analyst: 2000 to 2006
+
+Software developer and analyst roles at Archeometra and Supernet S.p.A., working across Java/J2EE, Liferay portals, and Ruby on Rails.
+
+## Education
+
+- University of Padua: Master's degree in Computer Engineering, 2000
+- Istituto Tecnico Industriale, Belluno: Technical diploma in Electronics and Telecommunications, 1996
+
+---
+
+## Side Projects
+
+- URL: https://paolodona.com/side-projects.html
+- Markdown: https://paolodona.com/side-projects.html.md
+
+# Side Projects
+
+Things Paolo Donà has built outside the day job.
+
+## Este Bike Website
+
+- URL: https://www.estebike.it
+- Summary: Local cycling club website for Este Bike in Este, Italy, the home base for road, gravel and MTB rides in the Veneto.
+
+## Whatevernote
+
+- URL: https://www.whatevernote.com
+- Summary: A lightning-fast, distributed, offline-first note-taking app.
+
+---
+
+## Bookshelf
+
+- URL: https://paolodona.com/bookshelf.html
+- Markdown: https://paolodona.com/bookshelf.html.md
+
+# Bookshelf
+
+A selection of books Paolo Donà is reading or has read and enjoyed.
+
+- [Scaling People](https://press.stripe.com/scaling-people) by Claire Hughes Johnson
+- [Slow Productivity](https://www.amazon.co.uk/Slow-Productivity-Accomplishment-Without-Burnout/dp/024165291X) by Cal Newport
+- [Four Thousand Weeks](https://www.amazon.co.uk/Four-Thousand-Weeks-Embrace-thousand/dp/1784704008) by Oliver Burkeman
+- [Indistractable](https://www.amazon.co.uk/Indistractable-Control-Your-Attention-Choose/dp/1526610205) by Nir Eyal
+- [Building a Second Brain](https://www.amazon.co.uk/s?k=Building+a+Second+Brain+Tiago+Forte) by Tiago Forte
+- [Essentialism](https://www.amazon.co.uk/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0753555166) by Greg McKeown
+- [Priceless](https://www.amazon.co.uk/Priceless-Hidden-Psychology-William-Poundstone/dp/1851688293) by William Poundstone
+- [High Growth Handbook](https://press.stripe.com/high-growth-handbook) by Elad Gil
+- [Principles](https://www.principles.com/) by Ray Dalio
+- [Principles for Dealing with the Changing World Order](https://www.principles.com/) by Ray Dalio
+- [How to Avoid a Climate Disaster](https://www.gatesnotes.com/How-to-Avoid-a-Climate-Disaster-announcement) by Bill Gates
+- [Permanent Record](https://www.amazon.co.uk/Permanent-Record-Edward-Snowden/dp/1529035694) by Edward Snowden
+- [Freakonomics](https://www.amazon.co.uk/Freakonomics-Rogue-Economist-Explores-Everything/dp/0141030089) by Steven D. Levitt & Stephen J. Dubner
+- [The Coming Wave](https://the-coming-wave.com/) by Mustafa Suleyman
+- [Digital Minimalism](https://www.amazon.co.uk/Digital-Minimalism-Choosing-Focused-Noisy/dp/0241341132) by Cal Newport
+- [It Doesn't Have to Be Crazy at Work](https://basecamp.com/books) by Jason Fried & David Heinemeier Hansson
+- [Deep Work](https://www.amazon.co.uk/Deep-Work-Focused-Success-Distracted/dp/0349411905) by Cal Newport
+- [Evil Plans](https://www.amazon.co.uk/Evil-Plans-Having-Road-Domination/dp/1591843847) by Hugh MacLeod
+- [Profit First](https://www.amazon.co.uk/Profit-First-Transform-Cash-Eating-Money-Making/dp/073521414X) by Mike Michalowicz
+- [Berkshire Hathaway: Letters to Shareholders 1965-2024](https://www.berkshirehathaway.com/letters/letters.html) by Warren E. Buffett
+- [Fooled by Randomness](https://www.fooledbyrandomness.com/) by Nassim Nicholas Taleb
+
+---
+
+## Blog
+
+- URL: https://paolodona.com/blog.html
+- Markdown: https://paolodona.com/blog.html.md
+
+# Blog
+
+Occasional notes by Paolo Donà on technology, leadership, AI, and life.
+
+- [Talking to Oracle OPERA in plain English](https://paolodona.com/blog/opera-mcp.html): I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially "old-style enterprise" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.
+- [Speaking at Stripe Sessions 2026 in San Francisco](https://paolodona.com/blog/stripe-sessions-2026.html): Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
+- [Borrowing expertise: a 30-property Booking.com merchandising audit](https://paolodona.com/blog/merchandising-audit.html): I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.
+
+---
+
+## Blog posts
 
 ### Talking to Oracle OPERA in plain English
 
 - URL: https://paolodona.com/blog/opera-mcp.html
+- Markdown: https://paolodona.com/blog/opera-mcp.html.md
 - Published: 1st May 2026 (2026-05-01)
 - Summary: I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially "old-style enterprise" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.
 
@@ -89,6 +228,7 @@ If you operate any large enterprise system and you are wondering whether this ap
 ### Speaking at Stripe Sessions 2026 in San Francisco
 
 - URL: https://paolodona.com/blog/stripe-sessions-2026.html
+- Markdown: https://paolodona.com/blog/stripe-sessions-2026.html.md
 - Published: 30th April 2026 (2026-04-30)
 - Summary: Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
 
@@ -138,6 +278,7 @@ Big thanks to James Lemon and Peter Hammer for being such generous co-panellists
 ### Borrowing expertise: a 30-property Booking.com merchandising audit
 
 - URL: https://paolodona.com/blog/merchandising-audit.html
+- Markdown: https://paolodona.com/blog/merchandising-audit.html.md
 - Published: 27th February 2026 (2026-02-27)
 - Summary: I am not a revenue manager and I am not a copywriter. Over a long weekend, with Claude Code as a collaborator, I produced a 30-property Booking.com merchandising audit grounded in pricing theory, behavioural psychology and a real side-by-side comparison against competitors. A note on what changes when domain knowledge stops being the bottleneck.
 
@@ -214,4 +355,3 @@ If you are an engineer reading this and you have been holding back from a domain
 I think you will find, as I did, that the moat you were respecting is mostly drawn on the map.
 
 ---
-

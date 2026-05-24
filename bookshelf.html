@@ -6,7 +6,8 @@
 	<title>Bookshelf — Paolo Don&agrave;</title>
 	<meta name="author" content="Paolo Don&agrave;">
 	<meta name="description" content="Books Paolo Don&agrave; is reading or has read and enjoyed — productivity, focus, leadership and more.">
-	<link rel="canonical" href="https://paolodona.com/bookshelf.html">	<meta property="og:type" content="website">
+	<link rel="canonical" href="https://paolodona.com/bookshelf.html">
+	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Paolo Don&agrave;">
 	<meta property="og:title" content="Bookshelf — Paolo Don&agrave;">
 	<meta property="og:description" content="A selection of books I&rsquo;m reading or I&rsquo;ve read and enjoyed.">
@@ -18,6 +19,7 @@
 	<meta name="twitter:image" content="https://paolodona.com/img/paolodona.png">
 	<link rel="shortcut icon" href="/img/paolodona.png">
 	<link rel="alternate" type="application/rss+xml" title="Paolo Don&agrave; — Blog" href="/feed.xml">
+	<link rel="alternate" type="text/markdown" title="Bookshelf — Markdown" href="/bookshelf.html.md">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/custom.css">
 	<script type="application/ld+json">
@@ -26,11 +28,41 @@
 		"@graph": [
 			{
 				"@type": "CollectionPage",
+				"@id": "https://paolodona.com/bookshelf.html#bookshelf",
 				"url": "https://paolodona.com/bookshelf.html",
 				"name": "Bookshelf — Paolo Donà",
 				"about": { "@id": "https://paolodona.com/#paolo" },
 				"isPartOf": { "@id": "https://paolodona.com/#website" },
+				"mainEntity": { "@id": "https://paolodona.com/bookshelf.html#books" },
 				"inLanguage": "en"
+			},
+			{
+				"@type": "ItemList",
+				"@id": "https://paolodona.com/bookshelf.html#books",
+				"name": "Books Paolo Donà is reading or has read and enjoyed",
+				"itemListElement": [
+					{ "@type": "ListItem", "position": 1, "item": { "@type": "Book", "name": "Scaling People", "author": "Claire Hughes Johnson", "url": "https://press.stripe.com/scaling-people" } },
+					{ "@type": "ListItem", "position": 2, "item": { "@type": "Book", "name": "Slow Productivity", "author": "Cal Newport", "url": "https://www.amazon.co.uk/Slow-Productivity-Accomplishment-Without-Burnout/dp/024165291X" } },
+					{ "@type": "ListItem", "position": 3, "item": { "@type": "Book", "name": "Four Thousand Weeks", "author": "Oliver Burkeman", "url": "https://www.amazon.co.uk/Four-Thousand-Weeks-Embrace-thousand/dp/1784704008" } },
+					{ "@type": "ListItem", "position": 4, "item": { "@type": "Book", "name": "Indistractable", "author": "Nir Eyal", "url": "https://www.amazon.co.uk/Indistractable-Control-Your-Attention-Choose/dp/1526610205" } },
+					{ "@type": "ListItem", "position": 5, "item": { "@type": "Book", "name": "Building a Second Brain", "author": "Tiago Forte", "url": "https://www.amazon.co.uk/s?k=Building+a+Second+Brain+Tiago+Forte" } },
+					{ "@type": "ListItem", "position": 6, "item": { "@type": "Book", "name": "Essentialism", "author": "Greg McKeown", "url": "https://www.amazon.co.uk/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0753555166" } },
+					{ "@type": "ListItem", "position": 7, "item": { "@type": "Book", "name": "Priceless", "author": "William Poundstone", "url": "https://www.amazon.co.uk/Priceless-Hidden-Psychology-William-Poundstone/dp/1851688293" } },
+					{ "@type": "ListItem", "position": 8, "item": { "@type": "Book", "name": "High Growth Handbook", "author": "Elad Gil", "url": "https://press.stripe.com/high-growth-handbook" } },
+					{ "@type": "ListItem", "position": 9, "item": { "@type": "Book", "name": "Principles", "author": "Ray Dalio", "url": "https://www.principles.com/" } },
+					{ "@type": "ListItem", "position": 10, "item": { "@type": "Book", "name": "Principles for Dealing with the Changing World Order", "author": "Ray Dalio", "url": "https://www.principles.com/" } },
+					{ "@type": "ListItem", "position": 11, "item": { "@type": "Book", "name": "How to Avoid a Climate Disaster", "author": "Bill Gates", "url": "https://www.gatesnotes.com/How-to-Avoid-a-Climate-Disaster-announcement" } },
+					{ "@type": "ListItem", "position": 12, "item": { "@type": "Book", "name": "Permanent Record", "author": "Edward Snowden", "url": "https://www.amazon.co.uk/Permanent-Record-Edward-Snowden/dp/1529035694" } },
+					{ "@type": "ListItem", "position": 13, "item": { "@type": "Book", "name": "Freakonomics", "author": "Steven D. Levitt & Stephen J. Dubner", "url": "https://www.amazon.co.uk/Freakonomics-Rogue-Economist-Explores-Everything/dp/0141030089" } },
+					{ "@type": "ListItem", "position": 14, "item": { "@type": "Book", "name": "The Coming Wave", "author": "Mustafa Suleyman", "url": "https://the-coming-wave.com/" } },
+					{ "@type": "ListItem", "position": 15, "item": { "@type": "Book", "name": "Digital Minimalism", "author": "Cal Newport", "url": "https://www.amazon.co.uk/Digital-Minimalism-Choosing-Focused-Noisy/dp/0241341132" } },
+					{ "@type": "ListItem", "position": 16, "item": { "@type": "Book", "name": "It Doesn't Have to Be Crazy at Work", "author": "Jason Fried & David Heinemeier Hansson", "url": "https://basecamp.com/books" } },
+					{ "@type": "ListItem", "position": 17, "item": { "@type": "Book", "name": "Deep Work", "author": "Cal Newport", "url": "https://www.amazon.co.uk/Deep-Work-Focused-Success-Distracted/dp/0349411905" } },
+					{ "@type": "ListItem", "position": 18, "item": { "@type": "Book", "name": "Evil Plans", "author": "Hugh MacLeod", "url": "https://www.amazon.co.uk/Evil-Plans-Having-Road-Domination/dp/1591843847" } },
+					{ "@type": "ListItem", "position": 19, "item": { "@type": "Book", "name": "Profit First", "author": "Mike Michalowicz", "url": "https://www.amazon.co.uk/Profit-First-Transform-Cash-Eating-Money-Making/dp/073521414X" } },
+					{ "@type": "ListItem", "position": 20, "item": { "@type": "Book", "name": "Berkshire Hathaway: Letters to Shareholders 1965-2024", "author": "Warren E. Buffett", "url": "https://www.berkshirehathaway.com/letters/letters.html" } },
+					{ "@type": "ListItem", "position": 21, "item": { "@type": "Book", "name": "Fooled by Randomness", "author": "Nassim Nicholas Taleb", "url": "https://www.fooledbyrandomness.com/" } }
+				]
 			},
 			{
 				"@type": "BreadcrumbList",

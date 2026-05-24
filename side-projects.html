@@ -6,7 +6,8 @@
 	<title>Side Projects — Paolo Don&agrave;</title>
 	<meta name="author" content="Paolo Don&agrave;">
 	<meta name="description" content="Side projects by Paolo Don&agrave; — Whatevernote (a fast, distributed, offline-first note-taking app), the Este Bike cycling-club website, and other experiments.">
-	<link rel="canonical" href="https://paolodona.com/side-projects.html">	<meta property="og:type" content="website">
+	<link rel="canonical" href="https://paolodona.com/side-projects.html">
+	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Paolo Don&agrave;">
 	<meta property="og:title" content="Side Projects — Paolo Don&agrave;">
 	<meta property="og:description" content="Whatevernote, Este Bike and other things I&rsquo;ve built outside the day job.">
@@ -18,6 +19,7 @@
 	<meta name="twitter:image" content="https://paolodona.com/img/paolodona.png">
 	<link rel="shortcut icon" href="/img/paolodona.png">
 	<link rel="alternate" type="application/rss+xml" title="Paolo Don&agrave; — Blog" href="/feed.xml">
+	<link rel="alternate" type="text/markdown" title="Side Projects — Markdown" href="/side-projects.html.md">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/custom.css">
 	<script type="application/ld+json">
@@ -26,11 +28,41 @@
 		"@graph": [
 			{
 				"@type": "CollectionPage",
+				"@id": "https://paolodona.com/side-projects.html#projects",
 				"url": "https://paolodona.com/side-projects.html",
 				"name": "Side Projects — Paolo Donà",
 				"about": { "@id": "https://paolodona.com/#paolo" },
 				"isPartOf": { "@id": "https://paolodona.com/#website" },
+				"mainEntity": { "@id": "https://paolodona.com/side-projects.html#project-list" },
 				"inLanguage": "en"
+			},
+			{
+				"@type": "ItemList",
+				"@id": "https://paolodona.com/side-projects.html#project-list",
+				"name": "Side projects",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"item": {
+							"@type": "CreativeWork",
+							"name": "Este Bike Website",
+							"url": "https://www.estebike.it",
+							"description": "Local cycling club website for Este Bike in Este, Italy."
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"item": {
+							"@type": "SoftwareApplication",
+							"name": "Whatevernote",
+							"url": "https://www.whatevernote.com",
+							"applicationCategory": "ProductivityApplication",
+							"description": "A lightning-fast, distributed, offline-first note-taking app."
+						}
+					}
+				]
 			},
 			{
 				"@type": "BreadcrumbList",
