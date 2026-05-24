@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-Guidance for Claude Code when working in this repository.
+Guidance for Codex when working in this repository.
 
 ## Overview
 
@@ -56,7 +56,7 @@ There is no test suite, no linter, and no CI.
 4. Commit the markdown source **and** all generated files together.
 
 ### Adding a book to the bookshelf
-Use the `add-book` skill in `.claude/skills/add-book.md`. It enforces link preference (publisher → amazon.co.uk → amazon.com), cover-image download, slug naming, exact markup, and top-of-grid insertion.
+Use the `add-book` skill in `.Codex/skills/add-book.md`. It enforces link preference (publisher → amazon.co.uk → amazon.com), cover-image download, slug naming, exact markup, and top-of-grid insertion.
 
 ### SEO / LLM discoverability
 - Every page has its own `<title>`, `<meta name="description">`, OG/Twitter tags, canonical URL, and JSON-LD.
