@@ -2,43 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://paolodona.com/</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/work.html</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/side-projects.html</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/bookshelf.html</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/blog.html</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/index.html.md</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/work.html.md</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/side-projects.html.md</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/bookshelf.html.md</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/blog.html.md</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
+	</url>
+	<url>
+		<loc>https://paolodona.com/blog/king-alfreds-way-charity-cycle.html</loc>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/blog/opera-mcp.html</loc>
@@ -51,6 +55,10 @@
 	<url>
 		<loc>https://paolodona.com/blog/merchandising-audit.html</loc>
 		<lastmod>2026-02-27</lastmod>
+	</url>
+	<url>
+		<loc>https://paolodona.com/blog/king-alfreds-way-charity-cycle.html.md</loc>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/blog/opera-mcp.html.md</loc>
@@ -66,18 +74,18 @@
 	</url>
 	<url>
 		<loc>https://paolodona.com/feed.xml</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/llms.txt</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/llms-full.txt</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 	<url>
 		<loc>https://paolodona.com/site.json</loc>
-		<lastmod>2026-05-22</lastmod>
+		<lastmod>2026-05-24</lastmod>
 	</url>
 </urlset>

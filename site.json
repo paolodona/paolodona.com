@@ -9,7 +9,7 @@
   "publisher": {
     "@id": "https://paolodona.com/#paolo"
   },
-  "dateModified": "2026-05-22",
+  "dateModified": "2026-05-24",
   "mainEntity": {
     "@type": "Person",
     "@id": "https://paolodona.com/#paolo",
@@ -360,6 +360,14 @@
     }
   ],
   "blogPosts": [
+    {
+      "title": "Cycling King Alfred's Way for Focus Ireland and Crisis",
+      "url": "https://paolodona.com/blog/king-alfreds-way-charity-cycle.html",
+      "markdownUrl": "https://paolodona.com/blog/king-alfreds-way-charity-cycle.html.md",
+      "datePublished": "2026-05-24",
+      "summary": "In June I will ride King Alfred's Way with Staycity colleagues in memory of Keith Freeman, raising funds for Focus Ireland and Crisis.",
+      "wordCount": 297
+    },
     {
       "title": "Talking to Oracle OPERA in plain English",
       "url": "https://paolodona.com/blog/opera-mcp.html",

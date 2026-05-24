@@ -328,6 +328,7 @@ ${body}
 		</article>
 ${footerHtml}
 	</main>
+	<script src="/js/external-links.js" defer></script>
 	<script src="/js/lightbox.js" defer></script>
 </body>
 </html>
@@ -370,11 +371,21 @@ const listHtml = posts.map(p => `			<li class="entry">
 				<p class="entry__meta">${formatHumanDate(p.date)}</p>
 				<p class="entry__summary">${p.summary}</p>
 			</li>`).join('\n');
+const itemListHtml = posts.map((p, index) => `					{
+						"@type": "ListItem",
+						"position": ${index + 1},
+						"url": "${SITE_URL}/blog/${p.slug}.html",
+						"name": "${attrEscape(p.title)}"
+					}`).join(',\n');
 
 const indexRaw = readFileSync(blogIndex, 'utf8');
-const updated = indexRaw.replace(
+const updatedList = indexRaw.replace(
 	/<!-- posts:start -->[\s\S]*?<!-- posts:end -->/,
 	`<!-- posts:start -->\n${listHtml}\n\t\t<!-- posts:end -->`
+);
+const updated = updatedList.replace(
+	/("itemListElement": \[\n)[\s\S]*?(\n\t\t\t\t\]\n\t\t\t\}\,\n\t\t\t\{\n\t\t\t\t"@type": "BreadcrumbList")/,
+	`$1${itemListHtml}$2`
 );
 writeFileSync(blogIndex, updated);
 console.log(`updated blog.html with ${posts.length} post(s)`);
