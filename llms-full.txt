@@ -1,6 +1,6 @@
 # Paolo Donà — Full Site Corpus
 
-> Personal website of Paolo Donà (https://paolodona.com). This file inlines the full public prose of the static pages and blog posts in Markdown for LLM ingestion. Last built 2026-05-24.
+> Personal website of Paolo Donà (https://paolodona.com). This file inlines the full public prose of the static pages and blog posts in Markdown for LLM ingestion. Last built 2026-11-05.
 
 ---
 

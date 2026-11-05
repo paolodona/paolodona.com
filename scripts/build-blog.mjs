@@ -2,6 +2,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
@@ -396,6 +397,20 @@ for (const page of STATIC_PAGES) {
 }
 
 const today = new Date().toISOString().slice(0, 10);
+
+// Last-modified date for a source file, taken from git history so that
+// sitemap/site.json only change when the content does. Falls back to today.
+function gitLastmod(relPath) {
+	try {
+		const out = execFileSync('git', ['log', '-1', '--format=%cs', '--', relPath], { cwd: root, encoding: 'utf8' }).trim();
+		return out || today;
+	} catch {
+		return today;
+	}
+}
+const pageSource = p => (p.path === '/' ? 'index.html' : p.path.slice(1));
+const pageLastmod = new Map(STATIC_PAGES.map(p => [p.path, gitLastmod(pageSource(p))]));
+const siteLastmod = [...pageLastmod.values(), ...posts.map(p => p.date)].sort().pop();
 const siteJson = {
 	'@context': 'https://schema.org',
 	'@type': 'WebSite',
@@ -405,7 +420,7 @@ const siteJson = {
 	description: profile.summary,
 	inLanguage: 'en',
 	publisher: { '@id': `${SITE_URL}/#paolo` },
-	dateModified: today,
+	dateModified: siteLastmod,
 	mainEntity: {
 		'@type': 'Person',
 		'@id': `${SITE_URL}/#paolo`,
@@ -449,15 +464,11 @@ writeFileSync(join(root, 'site.json'), JSON.stringify(siteJson, null, 2) + '\n')
 console.log('wrote site.json');
 
 // sitemap.xml
+// Only canonical HTML pages: the .md mirrors, feed, llms files and site.json
+// are advertised via <link rel=alternate>, robots.txt and llms.txt instead.
 const sitemapEntries = [
-	...STATIC_PAGES.map(p => ({ loc: `${SITE_URL}${p.path}`, lastmod: today })),
-	...STATIC_PAGES.map(p => ({ loc: `${SITE_URL}${p.markdownPath}`, lastmod: today })),
-	...posts.map(p => ({ loc: `${SITE_URL}/blog/${p.slug}.html`, lastmod: p.date })),
-	...posts.map(p => ({ loc: `${SITE_URL}/blog/${p.slug}.html.md`, lastmod: p.date })),
-	{ loc: `${SITE_URL}/feed.xml`, lastmod: today },
-	{ loc: `${SITE_URL}/llms.txt`, lastmod: today },
-	{ loc: `${SITE_URL}/llms-full.txt`, lastmod: today },
-	{ loc: `${SITE_URL}/site.json`, lastmod: today }
+	...STATIC_PAGES.map(p => ({ loc: `${SITE_URL}${p.path}`, lastmod: pageLastmod.get(p.path) })),
+	...posts.map(p => ({ loc: `${SITE_URL}/blog/${p.slug}.html`, lastmod: p.date }))
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
