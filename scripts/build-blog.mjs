@@ -426,8 +426,8 @@ const siteJson = {
 		'@id': `${SITE_URL}/#paolo`,
 		...profile,
 		email: profile.contacts.filter(c => c.value).map(c => c.value),
-		sameAs: profile.contacts.filter(c => c.label === 'LinkedIn').map(c => c.url),
-		knowsAbout: profile.interests,
+		sameAs: [...profile.contacts.filter(c => c.label === 'LinkedIn').map(c => c.url), 'https://github.com/paolodona'],
+		knowsAbout: [...profile.interests.filter(i => i !== 'Cycling'), 'Hospitality Technology', 'AI Agents', 'Model Context Protocol (MCP)', 'Payments Infrastructure', 'Property Management Systems', 'Cycling'],
 		hasOccupation: {
 			'@type': 'Occupation',
 			name: profile.jobTitle,
