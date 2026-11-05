@@ -367,12 +367,12 @@
   ],
   "blogPosts": [
     {
-      "title": "ZibZib, a game for explaining things clearly",
+      "title": "ZibZib, a game that teaches kids to explain themselves",
       "url": "https://paolodona.com/blog/zibzib.html",
       "markdownUrl": "https://paolodona.com/blog/zibzib.html.md",
       "datePublished": "2026-11-05",
-      "summary": "ZibZib is a small speaking game I built for my ten-year-old. A friendly alien asks questions, you answer out loud, and along the way you practise explaining things clearly and learn new words.",
-      "wordCount": 719
+      "summary": "I built a speaking game for my ten-year-old. A very confused alien asks questions, you answer out loud, and you get better at explaining things clearly and finding the right word. Here is how it works and why I built it.",
+      "wordCount": 774
     },
     {
       "title": "Cycling King Alfred's Way for Focus Ireland and Crisis",

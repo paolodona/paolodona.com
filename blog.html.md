@@ -2,7 +2,7 @@
 
 Occasional notes by Paolo Donà on technology, leadership, AI, and life.
 
-- [ZibZib, a game for explaining things clearly](https://paolodona.com/blog/zibzib.html): ZibZib is a small speaking game I built for my ten-year-old. A friendly alien asks questions, you answer out loud, and along the way you practise explaining things clearly and learn new words.
+- [ZibZib, a game that teaches kids to explain themselves](https://paolodona.com/blog/zibzib.html): I built a speaking game for my ten-year-old. A very confused alien asks questions, you answer out loud, and you get better at explaining things clearly and finding the right word. Here is how it works and why I built it.
 - [Cycling King Alfred's Way for Focus Ireland and Crisis](https://paolodona.com/blog/king-alfreds-way-charity-cycle.html): In June I will ride King Alfred's Way with Staycity colleagues in memory of Keith Freeman, raising funds for Focus Ireland and Crisis.
 - [Talking to Oracle OPERA in plain English](https://paolodona.com/blog/opera-mcp.html): I built an MCP server that puts Oracle OPERA Cloud — one of the most quintessentially "old-style enterprise" systems in hospitality — behind a Claude prompt. Here is what changed when our team stopped clicking and started asking.
 - [Speaking at Stripe Sessions 2026 in San Francisco](https://paolodona.com/blog/stripe-sessions-2026.html): Sharing the blueprint we used at Staycity Group to unify our multi-channel payment infrastructure on stage at Stripe Sessions 2026 in San Francisco.
