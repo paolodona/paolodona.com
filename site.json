@@ -9,7 +9,7 @@
   "publisher": {
     "@id": "https://paolodona.com/#paolo"
   },
-  "dateModified": "2026-05-24",
+  "dateModified": "2026-11-05",
   "mainEntity": {
     "@type": "Person",
     "@id": "https://paolodona.com/#paolo",
@@ -366,6 +366,14 @@
     }
   ],
   "blogPosts": [
+    {
+      "title": "ZibZib, a game for explaining things clearly",
+      "url": "https://paolodona.com/blog/zibzib.html",
+      "markdownUrl": "https://paolodona.com/blog/zibzib.html.md",
+      "datePublished": "2026-11-05",
+      "summary": "ZibZib is a small speaking game I built for my ten-year-old. A friendly alien asks questions, you answer out loud, and along the way you practise explaining things clearly and learn new words.",
+      "wordCount": 719
+    },
     {
       "title": "Cycling King Alfred's Way for Focus Ireland and Crisis",
       "url": "https://paolodona.com/blog/king-alfreds-way-charity-cycle.html",
