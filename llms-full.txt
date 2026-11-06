@@ -1,6 +1,6 @@
 # Paolo Donà — Full Site Corpus
 
-> Personal website of Paolo Donà (https://paolodona.com). This file inlines the full public prose of the static pages and blog posts in Markdown for LLM ingestion. Last built 2026-11-05.
+> Personal website of Paolo Donà (https://paolodona.com). This file inlines the full public prose of the static pages and blog posts in Markdown for LLM ingestion. Last built 2026-11-06.
 
 ---
 
@@ -177,6 +177,10 @@ Zib is an alien who has just landed on Earth and understands nothing. Each round
 There is no timer. You take as long as you like to plan your answer, tap a button, and talk into the microphone. Because Zib genuinely does not get it, a vague answer ("you take it and put it there") earns a puzzled reaction, and the gap in the explanation becomes obvious in a funny, friendly way rather than a corrective one. That turned out to be the core trick: **an alien that doesn't understand is a far better listener than a grown-up with a red pen.**
 
 After each answer the game shows a score split into a few colourful dimensions, then gives exactly three things: **one thing that went well**, **one tip**, and a slightly better version of the player's *own* answer. Then it offers a rematch on the same question for bonus points. A session is three rounds, around ten minutes.
+
+<a class="gallery__hero" href="/img/blog/zibzib/home.png" data-lightbox>
+	<img src="/img/blog/zibzib/home.png" alt="The ZibZib home screen: Zib the green one-eyed alien, a daily streak, today's mission and a Mystery Words card">
+</a>
 
 ## Words, collected like cards
 
